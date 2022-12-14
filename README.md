@@ -33,11 +33,11 @@
             =>src: this is the path/link of the image you ate inserting
             =>alt : this is short text which shows up in themarkup untill the image is being loaded or if image failed to load,  should not be long text (as it should take the same size as image and not overflow )
     => audio tag : used for inserting an audio file to the markup
-        => <audio controls autoplay muted>
-                <source src="horse.ogg" type="audio/ogg"/>
-                <source src="horse.mp3" type="audio/mpeg"/>
+        =>  < audio controls autoplay muted>
+                < source src="horse.ogg" type="audio/ogg" />
+                < source src="horse.mp3" type="audio/mpeg" />
                 Your browser does not support the audio element.
-            </audio>
+            < /audio>
         => attributes : 
             =>controls: this is used to introduce controls in the audio
             =>autoplay: this is used to automatically play the audio when page loads 
@@ -84,7 +84,7 @@
                        =>  HTML/Task\ Table/index.html
                        =>  HTML/Task\ Table/Description.txt
 
-                       
+
     => References : => https://www.w3schools.com/tags/tag_table.asp
                     => https://www.w3schools.com/tags/tag_thead.asp
                     => https://www.w3schools.com/tags/tag_tbody.asp
