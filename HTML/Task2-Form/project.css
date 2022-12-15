@@ -1,0 +1,276 @@
+    *{
+        box-sizing: border-box;
+    }
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        
+      }
+    .tooltip  .tooltiptext {
+        position: absolute;
+        visibility: hidden;
+        /* width: 120px; */
+        background-color: rgb(35, 30, 42);
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 5px;
+        z-index: 1;
+        bottom: 105%;
+        left: 45%;
+        margin-left: -60px;
+      }
+      
+      .tooltip  .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: rgb(35, 30, 42) transparent transparent transparent;
+      }
+      
+      .tooltip:hover  .tooltiptext {
+        visibility: visible;
+    }
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+sup {
+    color: red;
+}
+
+body {
+    background-color: rgb(243, 235, 182);
+}
+
+fieldset {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+legend {
+    color: blueviolet;
+}
+
+#submitresetdiv {
+    margin-top: 4px;
+
+
+}
+
+#see_current_vacancies {
+    margin-left: 10px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+.personal_info_input_cls {
+    /* margin: 2.5px; */
+    margin: 5px;
+
+
+}
+
+#fname,
+#mname,
+#lname {
+    margin-right: 15px;
+    text-align: center;
+    /* justify-content: space-between; */
+    
+}
+#personal_info_label_div{
+    min-width: 115px;
+}
+.personal_info_label_cls {
+    /* margin: 1px; */
+    margin: 3.5px;
+
+}
+
+#country_code {
+    cursor: no-drop;
+}
+
+
+#personal_info_main_div,
+#name_input_div,
+#secondary_details_div,
+#senior_sec_details_div,
+#grad_details_div,
+#post_grad_details_div,
+#last_company_div,
+#upload_section_div,
+#submit_reset_div {
+    display: flex;
+}
+
+#header_sp18_image {
+    border-radius: 120px;
+}
+
+#applying_for_div {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#dob_input_div, #email_input_div{
+    margin-left: 5px;
+}
+#dob_div,
+#email_div,
+#last_company_div,
+#expected_salary_div,
+#upload_section_div {
+    margin: 10px 0px;
+}
+
+#submit_button {
+    /* background-color: rgb(160, 235, 160);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer; */
+    background-color: green;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+#reset_button {
+    background-color: rgb(232, 94, 94);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+#reset_button:hover {
+    /* transition-delay: 0ms; */
+
+}
+
+#footer_div {
+    border: 2px solid rgba(81, 211, 12, 0.309);
+}
+
+#contact_us {
+    text-decoration: underline;
+}
+
+.file_upload input {
+    display: none;
+}
+
+
+
+#middle_name_div {
+    margin-top: 5px;
+}
+
+#secondary_board_div,
+#secondary_school_div,
+#secondary_year_of_passing_div,
+#secondary_percentage_div {
+    width: 25%;
+}
+
+#senior_sec_board_div,
+#senior_sec_school_div,
+#senior_sec_year_of_passing_div,
+#senior_sec_percentage_div {
+    width: 25%;
+}
+
+#grad_university_div,
+#grad_institute_div,
+#grad_course_div,
+#grad_year_of_passing_div,
+#grad_percentage_div {
+    margin: 0px 18px 0px 0px;
+}
+
+#post_grad_university_div,
+#post_grad_institute_div,
+#post_grad_course_div,
+#post_grad_year_of_passing_div,
+#post_grad_percentage_div {
+    margin: 0px 18px 0px 0px;
+}
+
+.invisible_star {
+    visibility: hidden;
+
+}
+
+#last_company_name_div,
+#designation_div,
+#annual_ctc_div {
+    /* width: 25%; */
+    margin-right: 18px;
+}
+
+#upload_photograph_div,
+#upload_resume_div,
+#upload_certificates_div,
+#upload_self_intro_video_div,
+#upload_explanation_audio_div {
+    /* margin: 0px 5px; */
+    width: 10%;
+}
+
+#skills {
+    border-radius: 15px;
+    resize: none;
+    padding: 20px;
+}
+
+#self_intro_video_image {
+    border-radius: 14px;
+}
+
+#submit_div,
+#reset_div {
+    width: 8%;
+}
+
+#certificates_image {
+    border-radius: 15px;
+}
+
+#gradPercentage,
+#secPercentage,
+#postgradPercentage,
+#seniorSecPercentage {
+    width: 40px;
+}
+
+/* .file_upload label img title{
+    border-radius: 25px;
+    border: 5px solid red;
+} */
+.file_upload img {
+    cursor: pointer;
+}
+
+
