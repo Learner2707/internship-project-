@@ -1,57 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="./index.css" />
-    <!-- Variables -->
-    <link rel="stylesheet" href="./variables.css" />
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="./global_css.css" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <ul class="header-ul" id="header-nav-bar">
-          <li class="header-nav-bar-li" id="header-logo-section">
-            <img src="./assets/headerlogo.svg" alt="logo" id="headerlogo" />
-            <img src="./assets/headerCompanyName.svg" alt="Repo" />
-          </li>
-          <li class="header-nav-bar-li header-typography">Solution</li>
-          <li class="header-nav-bar-li header-typography">Pricing</li>
-          <li class="header-nav-bar-li header-typography">Demo</li>
-          <li class="header-nav-bar-li header-typography">Download</li>
-          <li class="header-nav-bar-li header-typography">Contact Sales</li>
-        </ul>
-        <ul class="header-ul" id="header-signin-section">
-          <li class="header-signin-section" id="header-signin">Sign in</li>
-          <li class="header-signin-section">
-            <button id="header-btn" class="btn">Get it free</button>
-          </li>
-        </ul>
-      </header>
-      <section id="top-section">
-        <div id="top-section-content">
-            <h2 id="top-section-heading">Powerfull Business Management</h2>
-            <p id="top-section-para">Manage, secure, and provide application configuration data with our powerful  management tool.</p>
-            <div id="top-section-btn-section">
-                <button id="top-section-btn" class="btn">Get it free</button>
-                
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project</title>
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./index.css" />
+  <!-- Variables -->
+  <link rel="stylesheet" href="./variables.css" />
 
+  <!-- Font  -->
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <ul class="header-ul" id="header-nav-bar">
+        <li class="header-nav-bar-li" id="header-logo-section">
+          <img src="./assets/headerlogo.svg" alt="logo" id="headerlogo" />
+          <img src="./assets/headerCompanyName.svg" alt="Repo" />
+        </li>
+        <li>Solution</li>
+        <li>Pricing</li>
+        <li>Demo</li>
+        <li>Download</li>
+        <li>Contact Sales</li>
+      </ul>
+      <ul class="header-ul" id="header-signin-section">
+        <li>Sign in</li>
+        <li><button id="header-btn" class="btn">Get it free</button></li>
+      </ul>
+    </header>
+  </div>
+
+  <!-- Top Section begins here  -->
+  <div class="container">
+    <section id="top-section">
+      <div id="top-section-content">
+        <h2 id="top-section-heading">Powerfull Business Management</h2>
+        <p id="top-section-para">
+          Manage, secure, and provide application configuration data with our
+          powerful management tool.
+        </p>
+        <div id="top-section-btn-section">
+          <button id="top-section-btn" class="btn">Get it free</button>
+          <a id="top-section-link" href="#">Explore Demo </a>
+          <img src="./assets/rightArrowBlue.svg" alt="arrow" />
         </div>
-        <div id="top-section-dashboard">
-            <img src="./assets/topSectionDashboard.svg" alt="dashboard" id="top-section-dashboard-img">
+      </div>
+      <div id="top-section-dashboard">
+        <img src="./assets/topSectionDashboard.svg" alt="dashboard" id="top-section-dashboard-img" />
+      </div>
+    </section>
+  </div>
+
+  <!-- features section starts here  -->
+  <div class="container">
+    <section id="features-section">
+      <h2 class="features-section-heading">Truly Help Your Company</h2>
+      <div id="essential-features-panel-box">
+        <div id="essential-features">
+          <div class="essential-feature" id="feature-shadow">
+            <h5 class="essential-feature-heading">Human Resource</h5>
+            <p class="essential-feature-info">
+              Manage candidates and the interview process. Onboard new
+              employees.
+            </p>
+          </div>
+          <div class="essential-feature">
+            <h5 class="essential-feature-heading">Sales Cycle</h5>
+            <p class="essential-feature-info">
+              Track prospects through your deals pipe. Oversee client
+              accounts, onboard modern clients, and keep your group centered
+              on developing deals.
+            </p>
+          </div>
+          <div class="essential-feature">
+            <h5 class="essential-feature-heading">Time Tracker</h5>
+            <p class="essential-feature-info">
+              keep your employees productivity while working from anywhere
+              with online attendance and time tracker
+            </p>
+          </div>
         </div>
-      </section>
-    </div>
-  </body>
+        <div id="essential-features-control-panel">
+          <img src="./assets/essentialFeaturesPanel.svg" alt="panel" style="width: 100%" />
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
 </html>
