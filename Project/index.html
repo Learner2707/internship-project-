@@ -16,24 +16,26 @@
 </head>
 
 <body>
-  <div class="container">
-    <header>
-      <ul class="header-ul" id="header-nav-bar">
-        <li class="header-nav-bar-li" id="header-logo-section">
-          <img src="./assets/headerlogo.svg" alt="logo" id="headerlogo" />
-          <img src="./assets/headerCompanyName.svg" alt="Repo" />
-        </li>
-        <li>Solution</li>
-        <li>Pricing</li>
-        <li>Demo</li>
-        <li>Download</li>
-        <li>Contact Sales</li>
-      </ul>
-      <ul class="header-ul" id="header-signin-section">
-        <li>Sign in</li>
-        <li><button id="header-btn" class="btn">Get it free</button></li>
-      </ul>
-    </header>
+  <div class="container" id="fixed-header">
+    <!-- <div class="fixed-header"> -->
+      <header>
+        <ul class="header-ul" id="header-nav-bar">
+          <li class="header-nav-bar-li" id="header-logo-section">
+            <img src="./assets/headerlogo.svg" alt="logo" id="headerlogo" />
+            <img src="./assets/headerCompanyName.svg" alt="Repo" />
+          </li>
+          <li>Solution</li>
+          <li>Pricing</li>
+          <li>Demo</li>
+          <li>Download</li>
+          <li>Contact Sales</li>
+        </ul>
+        <ul class="header-ul" id="header-signin-section">
+          <li>Sign in</li>
+          <li><button id="header-btn" class="btn">Get it free</button></li>
+        </ul>
+      </header>
+    <!-- </div> -->
   </div>
 
   <!-- Top Section begins here  -->
@@ -90,8 +92,112 @@
           <img src="./assets/essentialFeaturesPanel.svg" alt="panel" style="width: 100%" />
         </div>
       </div>
+      <div class="section-cards" id="feature-section-cards">
+        <div class="card">
+          <div class="card-icon-div">
+            <img src="./assets/project_card_icon.svg" alt="icon" class="card-icon-img">
+          </div>
+          <div class="card-heading">Projects</div>
+          <p class="card-info">Track development projection arranging, budget gatherings, and regular work.</p>
+        </div>
+        <div class="card card-shadow">
+          <div class="card-icon-div">
+            <img src="./assets/finance_card_icon.svg" alt="icon" class="card-icon-img">
+          </div>
+          <div class="card-heading">Finance</div>
+          <p class="card-info">Manage employee benefits flexibly, easily, and quickly in one payroll-integrated application.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon-div">
+            <img src="./assets/marketing_card_icon.svg" alt="icon" class="card-icon-img">
+          </div>
+          <div class="card-heading">Marketing</div>
+          <p class="card-info">Take your methodologies, messages, and campaigns from conception to execution.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon-div">
+            <img src="./assets/planning_card_icon.svg" alt="icon" class="card-icon-img">
+          </div>
+          <div class="card-heading">Planning</div>
+          <p class="card-info">Remain on best of key arranging, extend advance, and worker workloads.</p>
+        </div>
+      </div>
     </section>
   </div>
+
+    <!-- We exist for The Future Section begins here  -->
+    <div class="container">
+      <section id="future-section">
+        <div id="future-section-internal-wrapper">
+          <div id="future-section-management-illustration">
+            <img src="./assets/future-section-profile-img.svg" alt="profile">
+          </div>
+          <div id="future-section-content">
+            <h2 id="future-section-content-heading">We Exist For The Future</h2>
+            <p id="future-section-content-info">Managing is difficult work. Indeed harder on the off chance that you do not utilize computer program or have work spread over as well numerous devices. It's simple to lose track of all the extreme to remain up to date. That’s when things drop through the splits. Utilize one apparatus to organize ventures, make communication simple, and meet due dates.</p>
+          </div>
+
+        </div>
+
+        <div class="section-cards" id="feature-section-cards">
+          <div class="card">
+            <div class="card-icon-div">
+              <img src="./assets/cloud_card_icon.svg" alt="icon" class="card-icon-img">
+            </div>
+            <div class="card-heading">Cloud System</div>
+            <p class="card-info">With a cloud system, it will be easier to store and find data without losing it.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon-div">
+              <img src="./assets/finance_card_icon.svg" alt="icon" class="card-icon-img">
+            </div>
+            <div class="card-heading">Secure Data</div>
+            <p class="card-info">We make sure your data is safe under control with leading protection.</p>
+          </div>
+          <div class="card  card-shadow">
+            <div class="card-icon-div">
+              <img src="./assets/marketing_card_icon.svg" alt="icon" class="card-icon-img">
+            </div>
+            <div class="card-heading">Log Report</div>
+            <p class="card-info">For each arrangement alter it is logged who made what alter at which time.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon-div">
+              <img src="./assets/planning_card_icon.svg" alt="icon" class="card-icon-img">
+            </div>
+            <div class="card-heading">Communication</div>
+            <p class="card-info">Stay communicative with chat features as well as effective for employees who work remotely.</p>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+
+    <!-- Testimonials Section begins here  -->
+
+    <div class="container">
+      <section>
+        <h2 id="testimonial-section-heading">What Are Clients Saying</h2>
+        <div id="testimonial-cards">
+          <div class="testimonial-card">
+            <img src="./assets/testimonial-card-icon.svg" alt="quotes" class="testimonial-card-icon">
+            <p class="testimonial-card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, bibendum purus scelerisque ipsum id. Fringilla ipsum elementum aliquam aliquam sed duis feugiat molestie nisl. Sed sit cursus vulputate dignissim. </p>
+            <h5 class="testimonial-card-author">- CEO Hollowdesign</h5>
+          </div>
+          <div class="testimonial-card">
+            <img src="./assets/testimonial-card-icon.svg" alt="quotes" class="testimonial-card-icon">
+            <p class="testimonial-card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, bibendum purus scelerisque ipsum id. Fringilla ipsum elementum aliquam aliquam sed duis feugiat molestie nisl. Sed sit cursus vulputate dignissim. </p>
+            <h5 class="testimonial-card-author">- CEO Hollowdesign</h5>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    
+  
 </body>
 
 </html>
