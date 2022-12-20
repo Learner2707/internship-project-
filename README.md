@@ -137,11 +137,20 @@
 
 
 
-19/12/2022 (Friday):
+19/12/2022 (Monday):
     => Worked on the Project 
         => Added Features Section
 
     => Working Files: =>  Project/
+
+
+20/12/2022 (Tuesday):
+    => Worked on the Project 
+        => Added Features Section
+
+    => Working Files: =>  Project/
+
+    => References : https://www.w3schools.com/cssref/css3_pr_box-shadow.php
 
 
 
