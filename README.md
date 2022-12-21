@@ -153,5 +153,22 @@
     => References : https://www.w3schools.com/cssref/css3_pr_box-shadow.php
 
 
+21/12/2022 (Wednesday):
+    => Worked on the Project 
+        => Added More Features Section
+        => Added Get_started Section
+        => Added Footer Section
+        => Worked on CSS of sections
+
+    => Working Files: =>  Project/
+
+    => References : https://www.w3schools.com/cssref/css3_pr_box-shadow.php
+                    =>https://www.w3schools.com/howto/howto_css_aspect_ratio.asp
+                    =>https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_aspect_ratio_css
+                    =>https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_rounded_images
+                    =>https://css-tricks.com/almanac/properties/a/align-content/#:~:text=flex%2Dstart%20%3A%20lines%20packed%20to,one%20is%20at%20the%20end
+                    =>https://www.educba.com/css-inner-border/
+
+
 
 </pre>
