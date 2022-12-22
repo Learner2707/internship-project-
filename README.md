@@ -95,7 +95,7 @@
 14/12/2022 (Wednesday)
     => Form Tag : used for creating form in the markup
         => Form Elements :
-            =>input element: this the tag responsible for showing the input field of different types based on its attribute "type"
+            =>input element: this is the tag responsible for showing the input field of different types based on its attribute "type"
                 => input types: 
                     =>text : used for taking text as input 
                     =>password: used for taking password as input, characters are not shown
@@ -168,9 +168,58 @@
                     =>https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_rounded_images
                     =>https://css-tricks.com/almanac/properties/a/align-content/#:~:text=flex%2Dstart%20%3A%20lines%20packed%20to,one%20is%20at%20the%20end
                     =>https://www.educba.com/css-inner-border/
-    <hr/>       
-                                  
-                                        <b>CSS</b> <hr/>
+    <hr/>                         <b>CSS</b> <hr/>
+
+22/12/2022 (Thursday) : 
+    => Different Ways to add CSS(Cascading Style Sheets) to the markup
+        => INLINE CSS : This is done by adding style attribute directly to the element in the HTML file
+            => < div style=" font-size:16px; color: red"> Test < /div>
+        => INTERNAL CSS : This is done by writing CSS properties and corresponding values in the style tag in which is put in header tag
+            => < head >
+                    < style>
+                        div{
+                            background-color: red;
+                            display: flex;
+                        }
+                    < /style>
+                < /head>
+        => EXTERNAL CSS : 
+            => This is done by writing CSS properties and its corresponding values in a different file (stylesheet) with extension .css, and then this file is linked(via link tag) in head tag of the HTML file
+    => Common ways of selecting th elements for giving them CSS (Simple Selectors)
+        => Element Selector : CSS is given directly to the element 
+            =>div{
+                    background-color: red;
+                    display: flex;
+                }
+        => Class Selector : We add a class attribute , the value of which is the className to target while giving CSS to all the elements which have the same class given in the .html file
+            => . (dot) is used for styling using class selector
+            => < p class="para"> Test Paragraph < /p> 
+            => now to give style to the p tag , we write 
+                    => .para{
+                        color: blue;
+                        font-size: 20px;
+                    }
+        => ID Selector : we add an id attribute , the value of which is the idName to target while giving CSS to only that element which is given this id 
+            => we can give a particular id only to one element in the whole webpage
+            => # (hasgtag) is used for styling using id selector
+            => < p id="para2"> Test Paragraph < /p> 
+            => now to give style only to this p tag , we write 
+                    => #para2{
+                        color: red;
+                        font-size: 18px;
+                    }
+        
+
+    => Worked on the Project 
+            
+
+    => Working Files: => Project/
+                      => CSS/
+                      => README.md
+
+    => References : https://www.w3schools.com/css/css_selectors.asp
+
+
 
 
 </pre>
