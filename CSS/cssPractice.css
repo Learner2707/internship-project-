@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+section {
+    margin: 20px;
+}
+ul{
+    color: red;
+    margin-left: 20px;
+}
+.color-blue{
+    color: blue;
+}
+#color-green{
+    color: green;
+}
+.external-para{
+    color: blue;
+}
