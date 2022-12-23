@@ -8,12 +8,12 @@
   text-decoration: none;
 }
 body {
-  height: 5000px;
+  /* height: 5000px; */
 }
 .container {
   width: 1140px;
   margin: 0 auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 /* global button style */
 .btn {
@@ -53,6 +53,9 @@ body {
   position: sticky;
   top: 0px;
 }
+.bg{
+  background-color: #f5faff;
+}
 header {
   display: flex;
   padding: 30px 0px;
@@ -63,7 +66,7 @@ header {
   font-weight: var(--regularFontWeight);
   position: sticky;
   top: 0px;
-  background-color: #f5faff;
+  /* background-color: #f5faff; */
 }
 .header-ul {
   display: flex;
@@ -95,7 +98,7 @@ header {
 section#top-section {
   display: flex;
   padding-top: 160px;
-  background-color: #f5faff;
+  /* background-color: #f5faff; */
 }
 #top-section-content {
   width: 50%;
@@ -297,12 +300,67 @@ section#future-section{
 /* client section begins here  */
 .client-section{
   display: flex;
+  padding: 10% 0%;
 }
 .client-section-content{
-  width: 50%;
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
 }
 .client-logo-group{
-  width: 50%;
+  width: 58%;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.client-content-heading{
+  font-weight: var(--boldFontWeight);
+  font-size: var(--sectionHeadingFontSize);
+  line-height: 45px;
+
+}
+.client-content-info{
+  font-size: 18px;
+  line-height: 30px;
+
+}
+.logogroup-row{
+  display: flex;
+  gap: 18px;
+  width: 100%;
+}
+.client-row1{
+    justify-content: flex-end;
+  
+}
+.client-row2{
+  justify-content: center;
+}
+.client-card{
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+Width:158.66px;
+height:142.35px;
+}
+.sleek-card{
+  background: #27AE60;
+}
+.hollow-card{
+  background: #2148D1;
+}
+.proudcloud-card{
+  background: #1C1C7D;
+}
+.nero-card{
+  background: #F1D023;
+}
+.fresco-card{
+  background: #000000;
 }
 
 /* Get started section begins here  */
