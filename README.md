@@ -266,6 +266,12 @@
                       => CSS/
                       => README.md
 
-    => References : https://www.w3schools.com/css/css_selectors.asp
+    => References : https://www.w3schools.com/css/css_combinators.asp
+                    =>https://www.w3schools.com/css/css_attribute_selectors.asp
+                    => https://www.w3schools.com/css/css_pseudo_elements.asp
+                    => https://www.w3schools.com/css/css_pseudo_classes.asp
+                    => https://developer.mozilla.org/en-US/docs/Web/CSS/:link
+                    => https://quirksmode.org/css/selectors/hover.html (difference b/w hover and active)
+
 
 </pre>
