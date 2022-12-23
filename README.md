@@ -220,6 +220,52 @@
     => References : https://www.w3schools.com/css/css_selectors.asp
 
 
+23/12/2022 (Friday):
+    => CSS Combinators : 
+        => 1) Descendent Selector(space) : matches all elements that are descendants of a specified element
+        => 2) Child selector (>) : selects all elements that are the children of a specified element
+        => 3) Adjacent sibling selector (+) : select an element that is directly after another specific element
+        => 4) General sibling selector (~): selects all elements that are next siblings of a specified element
 
+    => Attribute Selectors : 
+        =>   [attribute]	          [target]	               Selects all elements with a target attribute
+        =>   [attribute=value]	      [target=_blank]	       Selects all elements with target="_blank"
+        =>   [attribute~=value]	      [title~=flower]	       Selects all elements with a title attribute
+                                                                    containing the word "flower"
+        =>   [attribute|=value]	      [lang|=en]	           Selects all elements with a lang attribute 
+                                                                    value starting with "en"
+        =>   [attribute^=value]	      a[href^="https"]	       Selects every < a> element whose href attribute 
+                                                                    value begins with "https"
+        =>   [attribute$=value]	      a[href$=".pdf"]	       Selects every < a> element whose href attribute 
+                                                                    value ends with ".pdf"
+        =>   [attribute*=value]	      a[href*="w3schools"]	   Selects every < a> element whose href attribute 
+                                                                     value contains the substring "w3schools"
+    
+    => Pseudo Class
+        => used to define a special state of an element
+            => Examples :   :active, :hover, :link, :visited, :first-child, :nth-child, :not()
+    => Pseudo Element
+        => A CSS pseudo-element is used to style specified parts of an element
+        => For example, it can be used to:
+                => Style the first letter, or line, of an element
+                => Insert content before, or after, the content of an element
+        => All Pseudo Elements
+            => ::after	        p::after	       Insert something after the content of each < p> element
+            => ::before	        p::before	       Insert something before the content of each < p> element
+            => ::first-letter	p::first-letter	   Selects the first letter of each < p> element
+            => ::first-line	    p::first-line	   Selects the first line of each < p> element
+            => ::marker	        ::marker	       Selects the markers of list items
+            => ::selection	    p::selection	   Selects the portion of an element that is selected by a user
+    
+
+    => Worked on the Project 
+    => Practiced CSS Combinators, Attribute Selectors, Pseudo Class 
+            => Practice Link : https://flukeout.github.io/    (an interactive game for learning differernt selectors)
+
+    => Working Files: => Project/
+                      => CSS/
+                      => README.md
+
+    => References : https://www.w3schools.com/css/css_selectors.asp
 
 </pre>
