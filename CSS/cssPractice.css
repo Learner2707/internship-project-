@@ -10,6 +10,20 @@
 section {
     margin: 20px;
 }
+.taskbtn {
+    width: 177px;
+    height: 51px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: brown;
+    position: relative;
+  }
+
+  .taskbtn a {
+    text-decoration: none;
+    color: white;
+  }
 ul{
     color: red;
     margin-left: 20px;
@@ -23,3 +37,17 @@ ul{
 .external-para{
     color: blue;
 }
+.taskbtn {
+    width: 177px;
+    height: 51px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: brown;
+    position: relative;
+  }
+
+  .taskbtn a {
+    text-decoration: none;
+    color: white;
+  }
