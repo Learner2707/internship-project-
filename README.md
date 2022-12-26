@@ -273,5 +273,45 @@
                     => https://developer.mozilla.org/en-US/docs/Web/CSS/:link
                     => https://quirksmode.org/css/selectors/hover.html (difference b/w hover and active)
 
+26/12/2022(Monday):
+
+    => Order of preference : 
+        1) inline CSS > internal CSS > external CSS
+        2) inline > id > Classes/Pseudo classes/ Attribute Selectors > Element/Pseudo Elements
+    => When importing multiple stylesheets, the sheet which is imported later in the head gets higher priority
+
+    =>Colors 
+        => Different Methods to give colors
+            => Color Name : eg red,yellow,green
+            => HEX code : 
+                => sample hex code : #ffffff   (this is for white)
+                => starts with # , followed with 6 hex digits, 2 each for R,G,B
+                => if the hex code is #RRGGBB then it can also be written #RGB in short 
+                => hex code can also include 2 more additional digits for opacity
+            => RGBA
+                => sample color: rgba(255,255,255,1)
+                => the integral values of rgb are in range [0,255]  , the fourth digit is for opacity which lies in range[0.00, 1.00] 
+                => the default value of opacity is 1 if not given otherwise, i.e color can also be given in this form: rgb(10,23,56) 
+            => HSLA 
+                => HSL(Hue, Saturation, Lightness)
+                    => Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+                    => Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.
+                    => Lightness is also a percentage value. 0% is black, and 100% is white.
+                    => sample HSL color : hsl(0, 100%, 50%)
+                => HSLA : here an extra parameter can be given for opacity which is in range [0.00, 1.00]
+                    => Sample HSLA color : hsla(9, 100%, 64%, 1)
+
+
+    => Worked on the Project 
+    => Practiced CSS Colors
+
+    => Working Files: => Project/
+                      => CSS/
+                      => README.md
+
+    => References : https://www.w3schools.com/css/css_colors.asp
+                    => https://www.w3schools.com/css/css_colors_rgb.asp
+                    => https://www.w3schools.com/css/css_colors_hex.asp
+                    => https://www.w3schools.com/css/css_colors_hsl.asp
 
 </pre>
