@@ -51,3 +51,18 @@ ul{
     text-decoration: none;
     color: white;
   }
+  .ul-color{
+    background-color: rgb(50, 179, 93);
+    color: rgba(68, 13, 234, 0.938);
+  }
+  .ul-color :first-child{
+    color: hsla(0, 91%, 33%, 0.94);
+  }
+  .ul-preference{ /*order preference practice*/
+    /* background-color: grey !important; */
+    background-color: grey;
+    /* color: grey !important; */       
+}
+ul{  /*order preference practice*/
+    color: green;
+  }
