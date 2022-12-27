@@ -314,4 +314,35 @@
                     => https://www.w3schools.com/css/css_colors_hex.asp
                     => https://www.w3schools.com/css/css_colors_hsl.asp
 
+27/12/2022 (Tuesday) : 
+    => CSS Box Model 
+        => All HTML elements can be considered as boxes
+        => The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content
+        => Content - The content of the box, where text and images appear
+        => Padding - Clears an area around the content. The padding is transparent
+        => Border - A border that goes around the padding and content
+        => Margin - Clears an area outside the border. The margin is transparent
+        => Margin Collapse : 
+            => Margin top of lower element  and margin bottom of upper element collapses to a margin equal to greater of two values (margin top, margin bottom) between the two elements.
+            => Margin collapse happens with only margin-top & bottom and not with margin-left & right
+    => Box-Sizing
+        => content-box
+            => This is the default value of box-sizing. The dimension of element only includes 'height' and 'width' and does not include 'border' and 'padding' given to element. Padding and Border take space outside the element.
+        => border-box 
+            => In this value, not only width and height properties are included but you will find padding and border inside of the box for example .box {width: 200px; border: 10px solid black;} renders a box that is 200px wide
+    = Display Property
+        => inline
+        => block
+        => inline-block
+            => Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
+            => Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.
+            => Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements
+
+    => References : https://www.w3schools.com/css/css_boxmodel.asp
+                    => https://www.w3schools.com/css/css3_box-sizing.asp
+                    => https://www.geeksforgeeks.org/how-is-border-box-different-from-content-box/
+
+    => Working Files: => Project/
+                      => CSS/
+                      => README.md
 </pre>
