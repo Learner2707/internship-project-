@@ -332,7 +332,12 @@
             => In this value, not only width and height properties are included but you will find padding and border inside of the box for example .box {width: 200px; border: 10px solid black;} renders a box that is 200px wide
     = Display Property
         => inline
+            => takes space as required
+            => does not add a new line at the end of itself
         => block
+            => takes full width of the screen
+            => adds a new line at the end of itself
+            => next element (inline/block) will appear in next line
         => inline-block
             => Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element.
             => Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not.
