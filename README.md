@@ -168,7 +168,7 @@
                     =>https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_rounded_images
                     =>https://css-tricks.com/almanac/properties/a/align-content/#:~:text=flex%2Dstart%20%3A%20lines%20packed%20to,one%20is%20at%20the%20end
                     =>https://www.educba.com/css-inner-border/
-    <hr/>                         <b>CSS</b> <hr/>
+    <hr/>                                           <b>CSS</b> <hr/>
 
 22/12/2022 (Thursday) : 
     => Different Ways to add CSS(Cascading Style Sheets) to the markup
