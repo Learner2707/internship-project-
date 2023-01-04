@@ -356,6 +356,85 @@
 
     => Working Files: =>  Project/
 
-    => References : 
+
+29/12/2022 (Thursday):
+    => Position Property :
+        => static : it is default value of the position property
+            => Static positioned elements are not affected by the top, bottom, left, and right properties
+            => positioned according to the normal flow of the page
+        => relative : 
+            => An element with position: relative; is positioned relative to its normal position
+            => The element moves relative to itself if top,left,right,bottom is given
+            => Other content will not be adjusted to fit into any gap left by the element
+        => absolute : 
+            => An element with position: absolute; is positioned relative to the nearest positioned ancestor
+            => However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling
+            => Absolute positioned elements are removed from the normal flow, and can overlap elements
+            => layout changes ie other content will be adjusted to fit into any gap left by the element
+        
+        => sticky : 
+            => An element with position: sticky; is positioned based on the user's scroll position
+            => A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed)
+            => layout doesn't change
+            => sticky remains in action until its parent is in viewport
+        
+        => fixed : 
+            => An element with position: fixed; is positioned relative to the viewport
+            => Which means it always stays in the same place even if the page is scrolled
+            => The top, right, bottom, and left properties are used to position the element
+            => A fixed element does not leave a gap in the page where it would normally have been located
+            => layout changes ie other content will be adjusted to fit into any gap left by the element
+        
+    => z-index :
+        => The z-index property specifies the stack order of an element.
+        => An element with greater stack order is always in front of an element with a lower stack order
+        => z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements)
+        => If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top
+
+    => opacity : 
+        => The opacity property specifies the opacity/transparency of an element
+        => The opacity property can take a value from 0.00 - 1.00. 
+        => The lower the value, the more transparent
+    
+    => Flexbox : 
+        => Flex Container : 
+            => The flex container becomes flexible by setting the display property to flex
+            => The flex container properties are:
+                => flex-direction
+                => flex-wrap
+                => flex-flow
+                => justify-content
+                => align-items
+                => align-content
+        => Flex Items : 
+            => The direct child elements of a flex container automatically becomes flexible (flex) items
+            => The flex item properties are:
+                => order
+                => flex-grow
+                => flex-shrink
+                => flex-basis
+                => flex
+                => align-self
+
+    => Worked on the Project 
+
+    => Working Files: =>  Project/
+                      => => CSS/
+                      => README.md
+                    
+
+    => References :
+                    => https://www.w3schools.com/css/css_positioning.asp
+                    => https://www.w3schools.com/cssref/pr_pos_z-index.php
+                    => https://www.w3schools.com/css/css_image_transparency.asp
+                    => https://www.w3schools.com/css/css3_flexbox.asp
+                    => https://www.w3schools.com/css/css3_flexbox_container.asp
+                    => https://www.w3schools.com/css/css3_flexbox_items.asp
+    
+
+
+
+
+
 
 </pre>
