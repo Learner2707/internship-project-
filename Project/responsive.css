@@ -1,49 +1,903 @@
-
-@media only screen and (min-width: 320px) {
-    .container {
-      width: 100%;
-      margin: 0 auto;
-      padding: 0px 10px;
-    }
-}
-@media only screen and (min-width: 576px) {
-    .container {
-      max-width: 540px;
-      margin: 0 auto;
-    }
-}
-@media only screen and (min-width: 768px) {
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
-    }
-}
-@media only screen and (min-width: 992px) {
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-    }
-}
-@media only screen and (min-width: 1200px) {
-    .container {
-      max-width: 1140px;
-      margin: 0 auto;
-    }
-}
 @media screen and (min-width: 1400px) {
-    .container {
-      max-width: 1320px;
-      margin: 0 auto;
-    }
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
 }
-  
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  .essential-features {
+    width: 33%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
 
+  /* ===================================   Global Variables  ======================================================= */
+  :root {
+    --section-heading-font: 32px;
+  }
 
+  /* =================================   Header Section   ======================================================= */
+  .header-nav-bar {
+    column-gap: 40px;
+  }
+  .header-signin-section {
+    gap: 40px;
+  }
 
+  /*============================================== Top Section  ===========================================================*/
 
+  section.top-section {
+    padding-top: 85px;
+  }
+  .top-section-heading {
+    font-size: 38px;
+  }
+  .top-section-btn-section {
+    margin-top: 34px;
+  }
+  .top-section-btn {
+    padding: 12px 28px;
+  }
+  .top-section-dashboard {
+    margin-bottom: -48px;
+  }
+  /*============================================= Features section  ==========================================================================*/
 
+  .features-section-heading {
+    text-align: center;
+  }
+  .essential-features-control-panel {
+    width: 66%;
+  }
+  .feature-section-cards {
+    margin: 47px 0px 65px 0px;
+  }
+  .essential-features {
+    width: 36%;
+  }
+  .card {
+    padding: 15px 7px;
+  }
+  /*================================================ Future Section  =========================================================================*/
 
+  .move-icon {
+    --radius: 172px;
+  }
 
+  /*============================== More Features section  ============================================================== */
 
+  .more-feature-section-cards {
+    margin: 47px 0px 65px 0px;
+  }
 
+  /*====================================== Client Section  ==============================================================*/
+  .client-section {
+    padding: 4.7% 0% 10.5% 0%;
+  }
+  .client-card {
+    width: 147px;
+    height: 131px;
+  }
+  .client-content-info {
+    font-size: 16px;
+    width: 64%;
+  }
 
+  /*================================ Testimonial Section  ================================================================*/
+  .testimonial-card {
+    padding: 30px;
+    width: 42%;
+  }
+  .testimonial-card-content {
+    font-size: 15px;
+  }
+
+  /*======================================= Get Started Section  ========================================================*/
+  .get-started-btn {
+    padding: 15px 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  /* ===================================   Global Variables  ======================================================= */
+  :root {
+    --section-heading-font: 32px;
+  }
+
+  /* =================================   Header Section   ======================================================= */
+  .header-nav-bar {
+    column-gap: 15px;
+  }
+  .header-signin-section {
+    gap: 10px;
+  }
+
+  /*============================================== Top Section  ===========================================================*/
+
+  section.top-section {
+    padding-top: 85px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .top-section-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .top-section-heading {
+    font-size: 36px;
+  }
+  .top-section-para {
+    width: 60%;
+  }
+  .top-section-btn-section {
+    margin-top: 32px;
+  }
+
+  .top-section-btn {
+    padding: 16px 32px;
+  }
+
+  .top-section-dashboard {
+    margin-bottom: -60px;
+    width: 100%;
+  }
+  /*============================================= Features section  ==========================================================================*/
+
+  .essential-features-control-panel {
+    display: none;
+  }
+  .feature-dashboard {
+    display: block;
+  }
+  .essential-features-panel-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .features-section-heading {
+    text-align: center;
+  }
+  .feature-section-cards {
+    margin: 47px 0px 65px 0px;
+  }
+  .section-cards {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .essential-features {
+    width: 80%;
+  }
+  .card {
+    padding: 15px 7px;
+    width: 45%;
+  }
+  /*================================================ Future Section  =========================================================================*/
+
+  .future-section-internal-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .future-section-management-illustration {
+    width: 60%;
+  }
+  .future-section-content {
+    width: 95%;
+    text-align: center;
+  }
+  .future-section-content-info {
+    margin: 25px auto;
+  }
+  .move-icon {
+    --radius: 164px;
+  }
+
+  /*========================================== More Features section  ======================================================== */
+
+  .more-feature-section-cards {
+    margin: 47px 0px 65px 0px;
+  }
+
+  /*====================================== Client Section  ==============================================================*/
+
+  .client-section {
+    padding: 4.7% 0% 10.5% 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .client-section-content {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .client-content-info {
+    font-size: 14px;
+    width: 42%;
+  }
+  .client-logo-group {
+    width: 71%;
+  }
+  .client-card {
+    width: 136px;
+    height: 122px;
+  }
+
+  /*================================ Testimonial Section  ================================================================*/
+  .testimonial-card {
+    padding: 30px;
+    width: 42%;
+  }
+  .testimonial-card-content {
+    font-size: 15px;
+  }
+
+  /*======================================= Get Started Section  ========================================================*/
+  .get-started-btn {
+    padding: 15px 30px;
+  }
+
+  /*========================================== Footer Section  ===========================================================*/
+  .footer-address {
+    margin-bottom: -4px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+  /* ===================================   Global Variables  ======================================================= */
+  :root {
+    --section-heading-font: 24px;
+  }
+
+  /* =================================   Header Section   ======================================================= */
+  .header-nav-bar {
+    column-gap: 15px;
+  }
+  .header-signin-section {
+    gap: 10px;
+  }
+  .desktop-visibility{
+    display: none;
+  }
+  .mobile-visibility{
+    display: block;
+  }
+
+  /*============================================== Top Section  ===========================================================*/
+
+  section.top-section {
+    padding-top: 85px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .top-section-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .top-section-heading {
+    font-size: 36px;
+  }
+  .top-section-para {
+    width: 60%;
+  }
+  .top-section-btn-section {
+    margin-top: 32px;
+    flex-direction: column;
+}
+
+  .top-section-btn {
+    padding: 16px 32px;
+  }
+
+  .top-section-dashboard {
+    margin-bottom: -47px;
+    width: 100%;
+  }
+  /*============================================= Features section  ==========================================================================*/
+
+  .essential-features-control-panel {
+    display: none;
+  }
+  .feature-dashboard {
+    display: block;
+  }
+  .essential-features-panel-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .essential-feature {
+    margin-bottom: 24px;
+  }
+  .features-section-heading {
+    text-align: center;
+    line-height: 30px;
+    padding: 80px 0px;
+    margin-top: 90px;
+  }
+  .feature-section-cards {
+    margin: 4px 0px 65px 0px;
+  }
+  .section-cards {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .essential-features {
+    width: 90%;
+  }
+  .card {
+    padding: 15px 7px;
+    width: 70%;
+  }
+  .card-info{
+    width: 100%;
+    margin: 0 auto;
+  }
+  /*================================================ Future Section  =========================================================================*/
+
+  .future-section-internal-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .future-section-management-illustration {
+    width: 80%;
+  }
+  .future-section-content {
+    width: 95%;
+    text-align: center;
+  }
+  .future-section-content-heading{
+    line-height: 30px;
+  }
+  .future-section-content-info {
+    margin: 25px auto;
+  }
+  .move-icon {
+    --radius: 177px;
+    --size: 23px;
+}
+.future-icon-img {
+  width: 100%;
+}
+
+  /*========================================== More Features section  ======================================================== */
+
+  .more-feature-section-cards {
+    margin: 47px 0px 65px 0px;
+  }
+  .more-features-card-heading{
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  /*====================================== Client Section  ==============================================================*/
+
+  .client-section {
+    padding: 4.7% 0% 18% 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .client-section-content {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .client-content-heading{
+    line-height: 30px;
+  }
+  .client-content-info {
+    font-size: 18px;
+    width: 75%;
+  }
+  .client-logo-group {
+    width: 88%;
+  }
+  .client-card {
+    width: 125px;
+    height: 111px;
+  }
+
+  /*================================ Testimonial Section  ================================================================*/
+  .testimonial-card {
+    padding: 30px;
+    width: 72%;
+  }
+  .testimonial-card-content {
+    font-size: 14px;
+  }
+  .testimonial-pagination-visibility{
+    display: none;
+  }
+  .testimonial-pagination{
+    display: none;
+  }
+  .testimonial-carousel{
+    display: flex;
+  }
+
+  /*======================================= Get Started Section  ========================================================*/
+  .get-started-btn {
+    padding: 20px 40px;
+  }
+  .get-started-section-heading{
+    line-height: 30px;
+  }
+  .get-started-btns {
+    flex-direction: column-reverse;
+}
+
+  /*========================================== Footer Section  ===========================================================*/
+  .footer-address {
+    line-height: 24px;
+    margin-bottom: -4px;
+  }
+  .footer-address-ul {
+    width: 50%;
+    
+}
+footer {
+  flex-direction: column;
+  gap: 60px;
+}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 575px) {
+  .container {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+   /* ===================================   Global Variables  ======================================================= */
+   :root {
+    --section-heading-font: 24px;
+  }
+
+  /* =================================   Header Section   ======================================================= */
+  .header-nav-bar {
+    column-gap: 15px;
+  }
+  .header-signin-section {
+    gap: 10px;
+  }
+  .desktop-visibility{
+    display: none;
+  }
+  .mobile-visibility{
+    display: block;
+  }
+
+  /*============================================== Top Section  ===========================================================*/
+
+  section.top-section {
+    padding-top: 85px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .top-section-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .top-section-heading {
+    font-size: 36px;
+  }
+  .top-section-para {
+    width: 70%;
+  }
+  .top-section-btn-section {
+    margin-top: 32px;
+    flex-direction: column;
+}
+
+  .top-section-btn {
+    padding: 16px 32px;
+  }
+
+  .top-section-dashboard {
+    margin-bottom: -38px;
+    width: 100%;
+  }
+  /*============================================= Features section  ==========================================================================*/
+
+  .essential-features-control-panel {
+    display: none;
+  }
+  .feature-dashboard {
+    display: block;
+  }
+  .essential-features-panel-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .essential-feature {
+    margin-bottom: 24px;
+  }
+  .features-section-heading {
+    text-align: center;
+    line-height: 30px;
+    padding: 80px 0px;
+    margin-top: 90px;
+  }
+  .feature-section-cards {
+    margin: 4px 0px 65px 0px;
+  }
+  .section-cards {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .essential-features {
+    width: 90%;
+  }
+  .card {
+    padding: 15px 7px;
+    width: 70%;
+  }
+  .card-info{
+    width: 100%;
+    margin: 0 auto;
+  }
+  /*================================================ Future Section  =========================================================================*/
+
+  .future-section-internal-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .future-section-management-illustration {
+    width: 100%;
+  }
+  .future-section-content {
+    width: 95%;
+    text-align: center;
+  }
+  .future-section-content-heading{
+    line-height: 30px;
+  }
+  .future-section-content-info {
+    margin: 25px auto;
+  }
+  .move-icon {
+    --radius: 189px;
+    --size: 26px;
+}
+.future-icon-img {
+  width: 100%;
+}
+
+  /*========================================== More Features section  ======================================================== */
+
+  .more-feature-section-cards {
+    margin: 47px 0px 65px 0px;
+  }
+  .more-features-card-heading{
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  /*====================================== Client Section  ==============================================================*/
+
+  .client-section {
+    padding: 4.7% 0% 18% 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .client-section-content {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .client-content-heading{
+    line-height: 30px;
+  }
+  .client-content-info {
+    font-size: 18px;
+    width: 75%;
+  }
+  .client-logo-group {
+    width: 88%;
+  }
+  .client-card {
+    width: 125px;
+    height: 111px;
+  }
+
+  /*================================ Testimonial Section  ================================================================*/
+  .testimonial-card {
+    padding: 30px;
+    width: 72%;
+  }
+  .testimonial-card-content {
+    font-size: 14px;
+  }
+  .testimonial-pagination-visibility{
+    display: none;
+  }
+  .testimonial-pagination{
+    display: none;
+  }
+  .testimonial-carousel{
+    display: flex;
+  }
+
+  /*======================================= Get Started Section  ========================================================*/
+  .get-started-btn {
+    padding: 20px 40px;
+  }
+  .get-started-section-heading{
+    line-height: 30px;
+  }
+  .get-started-btns {
+    flex-direction: column-reverse;
+}
+
+  /*========================================== Footer Section  ===========================================================*/
+  .footer-address {
+    line-height: 24px;
+    margin-bottom: -4px;
+  }
+  .footer-address-ul {
+    width: 50%;
+    
+}
+footer {
+  flex-direction: column;
+  gap: 60px;
+}
+}
+@media only screen and (max-width: 479px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+   /* ===================================   Global Variables  ======================================================= */
+   :root {
+    --section-heading-font: 24px;
+  }
+
+  /* =================================   Header Section   ======================================================= */
+  .header-nav-bar {
+    column-gap: 15px;
+  }
+  .header-signin-section {
+    gap: 10px;
+  }
+  .desktop-visibility{
+    display: none;
+  }
+  .mobile-visibility{
+    display: block;
+  }
+
+  /*============================================== Top Section  ===========================================================*/
+
+  section.top-section {
+    padding-top: 85px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .top-section-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .top-section-heading {
+    font-size: 36px;
+  }
+  .top-section-para {
+    width: 70%;
+    /* width: 85%; */
+  }
+  .top-section-btn-section {
+    margin-top: 32px;
+    flex-direction: column;
+}
+
+  .top-section-btn {
+    padding: 16px 32px;
+  }
+
+  .top-section-dashboard {
+    margin-bottom: -38px;
+    width: 100%;
+  }
+  /*============================================= Features section  ==========================================================================*/
+
+  .essential-features-control-panel {
+    display: none;
+  }
+  .feature-dashboard {
+    display: block;
+  }
+  .essential-features-panel-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .essential-feature {
+    margin-bottom: 24px;
+  }
+  .features-section-heading {
+    text-align: center;
+    line-height: 30px;
+    padding: 80px 0px;
+    margin-top: 90px;
+  }
+  .feature-section-cards {
+    margin: 4px 0px 65px 0px;
+  }
+  .section-cards {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .essential-features {
+    width: 90%;
+  }
+  .card {
+    padding: 15px 7px;
+    width: 70%;
+  }
+  .card-info{
+    width: 100%;
+    margin: 0 auto;
+  }
+  /*================================================ Future Section  =========================================================================*/
+
+  .future-section-internal-wrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .future-section-management-illustration {
+    width: 320px;
+  }
+  .future-section-content {
+    width: 95%;
+    text-align: center;
+  }
+  .future-section-content-heading{
+    line-height: 30px;
+  }
+  .future-section-content-info {
+    margin: 25px auto;
+  }
+  .move-icon {
+    --radius: 127px;
+    --size: 23px;
+}
+.future-icon-img {
+  width: 100%;
+}
+
+  /*========================================== More Features section  ======================================================== */
+
+  .more-feature-section-cards {
+    margin: 47px 0px 65px 0px;
+  }
+  .more-features-card-heading{
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  /*====================================== Client Section  ==============================================================*/
+
+  .client-section {
+    padding: 4.7% 0% 18% 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .client-section-content {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .client-content-heading{
+    line-height: 30px;
+  }
+  .client-content-info {
+    font-size: 18px;
+    width: 75%;
+  }
+  .client-logo-group {
+    width: 88%;
+  }
+  .client-card {
+    width: 95px;
+    height: 85px;
+  }
+  .client-logo{
+    width: 80%;
+  }
+
+  /*================================ Testimonial Section  ================================================================*/
+  .testimonial-card {
+    padding: 30px;
+    width: 72%;
+  }
+  .testimonial-card-content {
+    font-size: 14px;
+  }
+  .testimonial-pagination-visibility{
+    display: none;
+  }
+  .testimonial-pagination{
+    display: none;
+  }
+  .testimonial-carousel{
+    display: flex;
+  }
+
+  /*======================================= Get Started Section  ========================================================*/
+  .get-started-btn {
+    padding: 20px 40px;
+  }
+  .get-started-section-heading{
+    line-height: 30px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .get-started-btns {
+    flex-direction: column-reverse;
+}
+
+  /*========================================== Footer Section  ===========================================================*/
+  .footer-address {
+    line-height: 24px;
+    margin-bottom: -4px;
+  }
+  .footer-address-ul {
+    width: 50%;
+    
+}
+footer {
+  flex-direction: column;
+  gap: 60px;
+}
+}
