@@ -637,12 +637,17 @@ footer {
     width: 75%;
   }
   .client-logo-group {
-    width: 88%;
+    width: 100%;
   }
   .client-card {
-    width: 125px;
-    height: 111px;
+    /* width: 125px;
+    height: 111px; */
+    width: 115px;
+    height: 100px;
   }
+  .client-logo {
+    width: 80%;
+}
 
   /*================================ Testimonial Section  ================================================================*/
   .testimonial-card {
@@ -796,7 +801,7 @@ footer {
     gap: 20px;
   }
   .future-section-management-illustration {
-    width: 320px;
+    width: 290px;
   }
   .future-section-content {
     width: 95%;
@@ -809,7 +814,7 @@ footer {
     margin: 25px auto;
   }
   .move-icon {
-    --radius: 127px;
+    --radius: 123px;
     --size: 23px;
 }
 .future-icon-img {
@@ -848,11 +853,11 @@ footer {
     width: 75%;
   }
   .client-logo-group {
-    width: 88%;
+    width: 320px;
   }
   .client-card {
-    width: 95px;
-    height: 85px;
+    width: 80px;
+    height: 70px;
   }
   .client-logo{
     width: 80%;
