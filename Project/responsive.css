@@ -3,6 +3,7 @@
     max-width: 1320px;
     margin: 0 auto;
   }
+  
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .container {
@@ -730,7 +731,6 @@ footer {
   }
   .top-section-para {
     width: 70%;
-    /* width: 85%; */
   }
   .top-section-btn-section {
     margin-top: 32px;
