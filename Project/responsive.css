@@ -3,7 +3,9 @@
     max-width: 1320px;
     margin: 0 auto;
   }
-  
+  .move-icon{
+    --radius:237px;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .container {
