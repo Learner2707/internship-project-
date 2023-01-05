@@ -430,11 +430,107 @@
                     => https://www.w3schools.com/css/css3_flexbox.asp
                     => https://www.w3schools.com/css/css3_flexbox_container.asp
                     => https://www.w3schools.com/css/css3_flexbox_items.asp
+
+
+30/12/2022 (Friday)
+    => CSS Grid System
+        => The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning
+        => A grid layout consists of a parent element, with one or more child elements
+        => syntax : 
+            => display : grid;
+            => display : inline-grid;
+        => Grid Container Properties
+            =>grid-template-columns : defines the number of columns in your grid layout
+                => grid-template-columns: auto auto auto auto;
+            => grid-template-rows :  property defines the height of each row
+                => grid-template-rows: 80px 200px;
+            => justify-content: used to align the whole grid inside the container
+            => align-content:  used to vertically align the whole grid inside the container
+        => Grid Item Properties
+            => grid-column : defines on which column(s) to place an item
+                => shorthand for the grid-column-start and the grid-column-end properties
+                => grid-column: 1 / 5;
+                => grid-column: 1 / span 3;
+            => grid-row : defines on which row to place an item
+            => grid-area: 
+                => shorthand property for the grid-row-start, grid-column-start, grid-row-end and the grid-column-end properties
+                => grid-area: 1 / 2 / 5 / 6;
+                    => start on row-line 1 and column-line 2, and end on row-line 5 and column line 6
+        => Grid Gap
+            => You can adjust the gap size by using one of the following properties:
+                => column-gap
+                => row-gap
+                => gap
+        => Grid Lines
+            =>The lines between columns are called column lines.
+            => The lines between rows are called row lines.
+            => we can place a grid item in the grid layout by pointing to the column and row 
+                => grid-column-start, grid-column-end
+                => grid-row-start, grid-row-end
     
 
+    => CSS Resonsive Design 
+        => Media Query
+            => A media query consists of a media type and can contain one or more expressions, which resolve to either true or false
+            => Syntax : 
+                => @media not|only mediatype and (expressions) {
+                        <!-- CSS-Code; -->
+                    }
+            => Media types 
+                => all	    Used for all media type devices
+                => print	Used for printers
+                => screen	Used for computer screens, tablets, smart-phones etc.
+                => speech	Used for screenreaders that "reads" the page out loud
+            
+            => example 
+                => @media only screen and (min-width: 480px) {
+                        body {
+                            background-color: lightgreen;
+                        }
+                    }
+
+    =>  Worked on the Project 
+
+    => Working Files: =>  Project/
+                      => => CSS/
+                      => README.md
+                    
+
+    => References :   https://www.w3schools.com/css/css_grid.asp
+                     => https://www.w3schools.com/css/css_grid_container.asp
+                     => https://www.w3schools.com/css/css_grid_item.asp
+                     => https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+                     => https://www.w3schools.com/css/css3_mediaqueries.asp
+                    
+02/01/2023 (Monday): 
+     => Worked on the Project 
+
+    => Working Files: =>  Project/
+                      => README.md
+
+
+03/01/2023 (Tuesday): 
+     => Worked on the Project 
+
+    => Working Files: =>  Project/
+                      => README.md
+
+
+04/01/2023 (Wednesday): 
+     => Worked on the Project 
+
+    => Working Files: =>  Project/
+                      => README.md
+
+
+05/01/2023 (Thursday): 
+     => Worked on the Project 
+
+    => Working Files: =>  Project/
+                      => README.md
 
 
 
-
+        
 
 </pre>
