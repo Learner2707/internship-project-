@@ -12,6 +12,9 @@
     max-width: 1140px;
     margin: 0 auto;
   }
+  .header-nav-bar {
+    column-gap: 40px;
+  }
   .essential-features {
     width: 33%;
   }
@@ -29,16 +32,16 @@
 
   /* =================================   Header Section   ======================================================= */
   .header-nav-bar {
-    column-gap: 40px;
+    column-gap: 22px;
   }
   .header-signin-section {
-    gap: 40px;
+    gap: 24px;
   }
 
   /*============================================== Top Section  ===========================================================*/
 
   section.top-section {
-    padding-top: 85px;
+    padding-top: 50px;
   }
   .top-section-heading {
     font-size: 38px;
@@ -130,7 +133,7 @@
   /*============================================== Top Section  ===========================================================*/
 
   section.top-section {
-    padding-top: 85px;
+    padding-top: 50px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -291,7 +294,7 @@
   /*============================================== Top Section  ===========================================================*/
 
   section.top-section {
-    padding-top: 85px;
+    padding-top: 40px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
