@@ -17,6 +17,9 @@
   font-weight: var(--regularFontWeight);
   text-decoration: none;
 }
+li{
+  cursor: pointer;
+}
 
 /* ==============================  Global button style ==============================================================  */
 
@@ -26,6 +29,7 @@
   border: none;
   font-weight: var(--boldFontWeight);
   color: white;
+  cursor: pointer;
 }
 
 /* ==============================  Global card style  ================================================================= */
@@ -420,6 +424,7 @@ section.top-section {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
 }
 .carousel-visibility{
   display: none;
