@@ -3,8 +3,20 @@
     max-width: 1320px;
     margin: 0 auto;
   }
-  .move-icon{
-    --radius:237px;
+  /* =================================   Header Section   ======================================================= */
+  
+  .header-nav-bar {
+    column-gap: 40px;
+  }
+  /*============================================== Top Section  ===========================================================*/
+  
+  section.top-section {
+    padding-top: 100px;
+  }
+  /*================================================ Future Section  =========================================================================*/
+
+  .move-icon {
+    --radius: 237px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -13,7 +25,7 @@
     margin: 0 auto;
   }
   .header-nav-bar {
-    column-gap: 40px;
+    column-gap: 30px;
   }
   .essential-features {
     width: 33%;
@@ -64,7 +76,7 @@
     width: 66%;
   }
   .feature-section-cards {
-    margin: 47px 0px 65px 0px;
+    margin: 30px 0px 60px 0px;
   }
   .essential-features {
     width: 36%;
@@ -81,7 +93,7 @@
   /*============================== More Features section  ============================================================== */
 
   .more-feature-section-cards {
-    margin: 47px 0px 65px 0px;
+    margin: 30px 0px 60px 0px;
   }
 
   /*====================================== Client Section  ==============================================================*/
@@ -219,7 +231,7 @@
   /*========================================== More Features section  ======================================================== */
 
   .more-feature-section-cards {
-    margin: 47px 0px 65px 0px;
+    margin: 45px 0px 50px 0px;
   }
 
   /*====================================== Client Section  ==============================================================*/
@@ -284,10 +296,10 @@
   .header-signin-section {
     gap: 10px;
   }
-  .desktop-visibility{
+  .desktop-visibility {
     display: none;
   }
-  .mobile-visibility{
+  .mobile-visibility {
     display: block;
   }
 
@@ -317,7 +329,7 @@
   .top-section-btn-section {
     margin-top: 32px;
     flex-direction: column;
-}
+  }
 
   .top-section-btn {
     padding: 16px 32px;
@@ -364,7 +376,7 @@
     padding: 15px 7px;
     width: 70%;
   }
-  .card-info{
+  .card-info {
     width: 100%;
     margin: 0 auto;
   }
@@ -382,7 +394,7 @@
     width: 95%;
     text-align: center;
   }
-  .future-section-content-heading{
+  .future-section-content-heading {
     line-height: 30px;
   }
   .future-section-content-info {
@@ -391,17 +403,17 @@
   .move-icon {
     --radius: 177px;
     --size: 23px;
-}
-.future-icon-img {
-  width: 100%;
-}
+  }
+  .future-icon-img {
+    width: 100%;
+  }
 
   /*========================================== More Features section  ======================================================== */
 
   .more-feature-section-cards {
     margin: 47px 0px 65px 0px;
   }
-  .more-features-card-heading{
+  .more-features-card-heading {
     font-size: 24px;
     line-height: 30px;
   }
@@ -420,7 +432,7 @@
     text-align: center;
     align-items: center;
   }
-  .client-content-heading{
+  .client-content-heading {
     line-height: 30px;
   }
   .client-content-info {
@@ -443,26 +455,26 @@
   .testimonial-card-content {
     font-size: 14px;
   }
-  .testimonial-pagination-visibility{
+  .testimonial-pagination-visibility {
     display: none;
   }
-  .testimonial-pagination{
+  .testimonial-pagination {
     display: none;
   }
-  .testimonial-carousel{
+  .testimonial-carousel {
     display: flex;
   }
 
   /*======================================= Get Started Section  ========================================================*/
   .get-started-btn {
-    padding: 20px 40px;
+    padding: 15px 40px;
   }
-  .get-started-section-heading{
+  .get-started-section-heading {
     line-height: 30px;
   }
   .get-started-btns {
     flex-direction: column-reverse;
-}
+  }
 
   /*========================================== Footer Section  ===========================================================*/
   .footer-address {
@@ -471,12 +483,11 @@
   }
   .footer-address-ul {
     width: 50%;
-    
-}
-footer {
-  flex-direction: column;
-  gap: 60px;
-}
+  }
+  footer {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 575px) {
@@ -484,8 +495,8 @@ footer {
     max-width: 440px;
     margin: 0 auto;
   }
-   /* ===================================   Global Variables  ======================================================= */
-   :root {
+  /* ===================================   Global Variables  ======================================================= */
+  :root {
     --section-heading-font: 24px;
   }
 
@@ -496,17 +507,17 @@ footer {
   .header-signin-section {
     gap: 10px;
   }
-  .desktop-visibility{
+  .desktop-visibility {
     display: none;
   }
-  .mobile-visibility{
+  .mobile-visibility {
     display: block;
   }
 
   /*============================================== Top Section  ===========================================================*/
 
   section.top-section {
-    padding-top: 85px;
+    padding-top: 70px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -529,7 +540,7 @@ footer {
   .top-section-btn-section {
     margin-top: 32px;
     flex-direction: column;
-}
+  }
 
   .top-section-btn {
     padding: 16px 32px;
@@ -558,8 +569,8 @@ footer {
   .features-section-heading {
     text-align: center;
     line-height: 30px;
-    padding: 80px 0px;
-    margin-top: 90px;
+    padding: 40px 0px;
+    margin-top: 30px;
   }
   .feature-section-cards {
     margin: 4px 0px 65px 0px;
@@ -576,7 +587,7 @@ footer {
     padding: 15px 7px;
     width: 70%;
   }
-  .card-info{
+  .card-info {
     width: 100%;
     margin: 0 auto;
   }
@@ -594,7 +605,7 @@ footer {
     width: 95%;
     text-align: center;
   }
-  .future-section-content-heading{
+  .future-section-content-heading {
     line-height: 30px;
   }
   .future-section-content-info {
@@ -603,17 +614,17 @@ footer {
   .move-icon {
     --radius: 189px;
     --size: 26px;
-}
-.future-icon-img {
-  width: 100%;
-}
+  }
+  .future-icon-img {
+    width: 100%;
+  }
 
   /*========================================== More Features section  ======================================================== */
 
   .more-feature-section-cards {
     margin: 47px 0px 65px 0px;
   }
-  .more-features-card-heading{
+  .more-features-card-heading {
     font-size: 24px;
     line-height: 30px;
   }
@@ -632,7 +643,7 @@ footer {
     text-align: center;
     align-items: center;
   }
-  .client-content-heading{
+  .client-content-heading {
     line-height: 30px;
   }
   .client-content-info {
@@ -650,7 +661,7 @@ footer {
   }
   .client-logo {
     width: 80%;
-}
+  }
 
   /*================================ Testimonial Section  ================================================================*/
   .testimonial-card {
@@ -660,13 +671,13 @@ footer {
   .testimonial-card-content {
     font-size: 14px;
   }
-  .testimonial-pagination-visibility{
+  .testimonial-pagination-visibility {
     display: none;
   }
-  .testimonial-pagination{
+  .testimonial-pagination {
     display: none;
   }
-  .testimonial-carousel{
+  .testimonial-carousel {
     display: flex;
   }
 
@@ -674,12 +685,12 @@ footer {
   .get-started-btn {
     padding: 20px 40px;
   }
-  .get-started-section-heading{
+  .get-started-section-heading {
     line-height: 30px;
   }
   .get-started-btns {
     flex-direction: column-reverse;
-}
+  }
 
   /*========================================== Footer Section  ===========================================================*/
   .footer-address {
@@ -688,20 +699,19 @@ footer {
   }
   .footer-address-ul {
     width: 60%;
-    
-}
-footer {
-  flex-direction: column;
-  gap: 60px;
-}
+  }
+  footer {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 @media only screen and (max-width: 479px) {
   .container {
     max-width: 100%;
     padding: 0 15px;
   }
-   /* ===================================   Global Variables  ======================================================= */
-   :root {
+  /* ===================================   Global Variables  ======================================================= */
+  :root {
     --section-heading-font: 24px;
   }
 
@@ -712,10 +722,10 @@ footer {
   .header-signin-section {
     gap: 10px;
   }
-  .desktop-visibility{
+  .desktop-visibility {
     display: none;
   }
-  .mobile-visibility{
+  .mobile-visibility {
     display: block;
   }
 
@@ -745,7 +755,7 @@ footer {
   .top-section-btn-section {
     margin-top: 32px;
     flex-direction: column;
-}
+  }
 
   .top-section-btn {
     padding: 16px 32px;
@@ -792,7 +802,7 @@ footer {
     padding: 15px 7px;
     width: 70%;
   }
-  .card-info{
+  .card-info {
     width: 100%;
     margin: 0 auto;
   }
@@ -810,7 +820,7 @@ footer {
     width: 95%;
     text-align: center;
   }
-  .future-section-content-heading{
+  .future-section-content-heading {
     line-height: 30px;
   }
   .future-section-content-info {
@@ -819,17 +829,17 @@ footer {
   .move-icon {
     --radius: 123px;
     --size: 23px;
-}
-.future-icon-img {
-  width: 100%;
-}
+  }
+  .future-icon-img {
+    width: 100%;
+  }
 
   /*========================================== More Features section  ======================================================== */
 
   .more-feature-section-cards {
     margin: 47px 0px 65px 0px;
   }
-  .more-features-card-heading{
+  .more-features-card-heading {
     font-size: 24px;
     line-height: 30px;
   }
@@ -848,7 +858,7 @@ footer {
     text-align: center;
     align-items: center;
   }
-  .client-content-heading{
+  .client-content-heading {
     line-height: 30px;
   }
   .client-content-info {
@@ -862,7 +872,7 @@ footer {
     width: 80px;
     height: 70px;
   }
-  .client-logo{
+  .client-logo {
     width: 80%;
   }
 
@@ -874,13 +884,13 @@ footer {
   .testimonial-card-content {
     font-size: 14px;
   }
-  .testimonial-pagination-visibility{
+  .testimonial-pagination-visibility {
     display: none;
   }
-  .testimonial-pagination{
+  .testimonial-pagination {
     display: none;
   }
-  .testimonial-carousel{
+  .testimonial-carousel {
     display: flex;
   }
 
@@ -888,14 +898,14 @@ footer {
   .get-started-btn {
     padding: 20px 40px;
   }
-  .get-started-section-heading{
+  .get-started-section-heading {
     line-height: 30px;
     width: 70%;
     margin: 0 auto;
   }
   .get-started-btns {
     flex-direction: column-reverse;
-}
+  }
 
   /*========================================== Footer Section  ===========================================================*/
   .footer-address {
@@ -904,10 +914,9 @@ footer {
   }
   .footer-address-ul {
     width: 80%;
-    
-}
-footer {
-  flex-direction: column;
-  gap: 60px;
-}
+  }
+  footer {
+    flex-direction: column;
+    gap: 60px;
+  }
 }
