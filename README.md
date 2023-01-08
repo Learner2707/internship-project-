@@ -524,13 +524,20 @@
 
 
 05/01/2023 (Thursday): 
-     => Worked on the Project 
+    => Worked on the Project 
 
     => Working Files: =>  Project/
                       => README.md
 
+06/01/2023 (Friday):
+    => Worked on the Project 
+    => Self Study 
+    
+    => Working Files : => Project/
 
-
+    => References : 
+        => https://www.youtube.com/playlist?list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt
+        
         
 
 </pre>
