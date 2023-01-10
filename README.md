@@ -538,6 +538,65 @@
     => References : 
         => https://www.youtube.com/playlist?list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt
         => https://learn.namastedev.com/
-        
+
+09/01/2023 (Monday):
+    => Self Study 
+
+    => References : 
+        => https://www.youtube.com/playlist?list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt
+        => https://learn.namastedev.com/
+
+<hr/>                                           <b>JavaScript</b> <hr/>
+10/01/2023 ( Tuesday): 
+    => Javascript 
+        => JavaScript makes web pages dynamic
+        => JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else
+        => JavaScript is a programming language that adds interactivity to your website
+    => Ways to add javascript
+        =>You can include JavaScript in your HTML in two ways:
+            =>Writing the code in your HTML
+                => < script type="text/javascript">
+                        alert("This alert box was called with the onload event");
+                    < /script>
+            => Including it as a link to an external file    
+                => < script type="text/javascript" src="path-to-javascript-file.js">< /script>
+    => JavaScript Files
+        => JavaScript files are not HTML files or CSS files.
+        => Always end with the js extension
+        => Only include JavaScript
+    => Javascript data types 
+        => Primitive data types
+        => Non-primitive data types
+    => Primitive data types 
+        => string
+        => number
+        => bigint
+        => boolean
+        => undefined
+        => symbol
+        => null
+    => Number  
+        => JavaScript has only one type of number. Numbers can be written with or without decimals
+        => JavaScript Numbers are Always 64-bit Floating Point
+        => Integers (numbers without a period or exponent notation) are accurate up to 15 digits
+        => The maximum number of decimals is 17
+        => operations : + , - , * , / , % , etc.
+        => NaN
+            => NaN is a JavaScript reserved word indicating that a number is not a legal number
+            => You can use the global JavaScript function isNaN() to find out if a value is a not a number
+            => NaN is a number: typeof NaN returns number
+    => Javascript comments
+        => single line comment : Single line comments start with //
+        => multiline line comment : Multi-line comments start with /* and end with */
+    
+    => Self Study 
+        => https://wordpress.org/
+    
+    => References : 
+        => https://www.w3schools.com/js/js_whereto.asp
+        => https://www.w3schools.com/js/js_comments.asp
+        => https://www.w3schools.com/js/js_operators.asp
+        => https://www.w3schools.com/js/js_datatypes.asp
+        => https://www.w3schools.com/js/js_numbers.asp
 
 </pre>
