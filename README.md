@@ -599,4 +599,239 @@
         => https://www.w3schools.com/js/js_datatypes.asp
         => https://www.w3schools.com/js/js_numbers.asp
 
+11/01/2023 (Wednesday): 
+    => Worked on Angler LA Project  
+    => JavaScript Variables
+        => Variable declared without value takes the value undefined
+        => If you put a number in quotes, the rest of the numbers( after that number) will be treated as strings, and concatenated.
+            => let x = 2 + 3 + 5;     // x=10
+            => let x = 2 + 3 + "5";     // x= 55
+            => let x = "5" + 2 + 3;     // x= 523
+        => Naming the variable
+            => JavaScript is case sensitive
+            => Name of variable can start from uppercase, lowercase,_,$
+            => Snakecase —- first_name
+            => Camel case —- firstName(suitable )
+            => Pascal case
+            => Don't use hyphen in between
+        => var
+            => Can be RE-DECLARED
+                => var a=6;
+                => Var a;    // a does not lose its value (=6)
+            => Can be RE-ASSIGNED a different value
+                => var a=6;
+                => var a=7;    // this actually makes a new variable 
+            => The declaration of the variables defined with var are hoisted to the top.
+        => let
+            => Cannot be re-declared in the same block
+                => let a=5;
+                => let a;    // NOT ALLOWED
+            => Can be reassigned a new value
+                => let a=5;
+                => a=6;      //ALLOWED
+            => MUST be DECLARED BEFORE USE
+            => It has BLOCK SCOPE
+        => const
+            => Must be assigned when it is declared
+            => CANNOT be REASSIGNED
+            => Use const when you declare:
+                => A new Array
+                => A new Object
+                => A new Function
+                => A new RegExp
+            => It does not define a constant value. It defines a constant reference to a value.
+            => Because of this you can NOT:
+                => Reassign a constant value
+                => Reassign a constant array
+                => Reassign a constant object
+            => But you CAN:
+                => Change the elements of constant array
+                => Change the properties of constant object
+            => Redeclaring an existing var or let variable to const, in the same scope, is not allowed
+            => Reassigning an existing const variable, in the same scope, is not allowed
+            => Redeclaring a variable with const, in another scope, or in another block, is allowed
+
+    => References :
+        => https://www.w3schools.com/js/js_variables.asp
+        => https://www.w3schools.com/js/js_let.asp
+        => https://www.w3schools.com/js/js_const.asp
+
+12/01/2023 (Thursday): 
+    => Worked on Angler LA Project  
+    => Null:
+        => typeof null = "Object" 
+        => The value null represents the absence of any object value
+        => It is the intentional absence of the value. It is one of the primitive values of JavaScript
+        => Null is also referred as false.
+        => It is Primitive value in Javascript
+    => undefined : 
+        => It means the value does not exist in the compiler. 
+        => It is the global object.
+        => typeof undefined = "undefined" 
+        => The undefined property indicates that a variable has not been declared at all.
+        => It is an ECMAScript1 (ES1) feature.
+    => Difference bw null and undefined
+        => null == undefined // true
+        => null === undefined // false
+        => isNaN(2 +  null)      // false
+        => isNaN(2 + undefined) // true
+    => JavaScript ‘==’ operator:
+        => also known as the loose equality operator
+        => mainly used to compare two values on both sides and then return true or false.
+        => This operator checks equality only after converting both the values to a common type i.e type coercion.
+        => Examples 
+            => console.log(21 == 21);                        //true
+            => console.log(21 == '21');                      //true
+            => console.log('food is love'=='food is love');  //true
+            => console.log(true == 1);                       //true
+            => console.log(false == 0);                      //true
+            => console.log(null == undefined);               //true
+
+            => console.log(21 == 32);                    //false
+            => console.log(21 == '32');                  //false
+            => console.log(true == 0);                   //false
+            => console.log(null == false);               //false
+    => JavaScript ‘===’ operator: 
+        => Also known as strict equality operator
+        => it compares both the value and the type which is why the name “strict equality”
+        => Examples : 
+            => console.log('hello world' === 'hello world');   //true
+            => console.log(true === true);                     //true
+            => console.log(5 === 5);                           //true
+
+            => console.log(true === 1);                 //false
+            => console.log(true === 'true');            //false
+            => console.log(5 === '5');                  //false
+    => True values : 
+        => ‘0’
+        => ‘false’ // false wrapped in string.
+        => []
+        => {}
+        => function(){}
+    => False Values : 
+        => ” or “” // empty string
+        => false
+        => 0
+        => null
+        => undefined
+        => NaN // not-a-number
+    => EcmaScript
+        => Ecmascript is a standard used by javascript and can be used interchangeably with js
+        => ECMAScript 2015 was the second major revision to JavaScript.
+        => ECMAScript 2015 is also known as ES6 and ECMAScript 6.
+        => Some New features in ES6 
+            => let, const, arrow functions, spread operator, promises
+            => https://www.w3schools.com/js/js_es6.asp
+    => Rules for choosing a variable name
+        1) letters ,  underscore and $ are allowed
+        2) must begin with a $, _ or an alphabet
+        3) case sensitive
+        4) must NOT begin with a number
+    
+    => References :
+        => https://www.geeksforgeeks.org/undefined-vs-null-in-javascript/
+        => https://www.geeksforgeeks.org/javascript-vs-comparison-operator/
+        => https://www.w3schools.com/js/js_es6.asp
+
+13/01/2023 (Friday): 
+    => Worked on Angler LA Project  
+
+16/01/2023 (Monday): 
+    => Worked on Angler LA Project 
+    => Non -primitive data types 
+        => Array
+        => Object
+    => Array 
+        => Creating an Array
+            => Using an array literal 
+                => const array_name = [item1, item2, ...];
+            => Using the JavaScript Keyword new
+                => const cars = new Array("Saab", "Volvo", "BMW");
+            => There is no need to use new Array().
+            => For simplicity, readability and execution speed, use the array literal method.
+        => Accessing Array Elements
+            => You access an array element by referring to the index number:
+            => const cars = ["Saab", "Volvo", "BMW"];
+                let car = cars[0];
+        => Changing an Array Element
+            => cars[0] = "Opel";
+        => Arrays are objects , typeof cars returns Object
+        => Arrays properties and methods
+            => cars.length   // Returns the number of elements
+            => cars.sort()   // Sorts the array
+            => many more methods are present :   https://www.w3schools.com/js/js_array_methods.asp
+    => Object 
+        => Object Definition
+            => You define (and create) a JavaScript object with an object literal:
+            => const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+        => Object Properties
+            => The name:values pairs in JavaScript objects are called properties:
+        => Accessing Object Properties
+            => objectName.propertyName
+            => objectName["propertyName"]
+        => Object Methods
+            => Objects can also have methods.
+            => Methods are actions that can be performed on objects.
+            => Methods are stored in properties as function definitions.
+            => A method is a function stored as a property.
+    => Math Object
+        => Unlike other objects, the Math object has no constructor.
+        => The Math object is static.
+        => All methods and properties can be used without creating a Math object first.
+        => Math Properties (Constants) : 
+            => syntax for any Math property is : Math.property
+            => Math.E        // returns Euler's number
+            => Math.PI       // returns PI
+            => Math.SQRT2    // returns the square root of 2
+        => Math Methods : 
+            => The syntax for Math any methods is : Math.method(number)
+            => Math.round(x)	Returns x rounded to its nearest integer
+            => Math.ceil(x)	Returns x rounded up to its nearest integer
+            => Math.floor(x)	Returns x rounded down to its nearest integer
+            => Math.trunc(x)	Returns the integer part of x (new in ES6)
+
+    => References : 
+        => https://www.w3schools.com/js/js_arrays.asp
+        => https://www.w3schools.com/js/js_array_methods.asp
+        => https://www.w3schools.com/js/js_objects.asp
+        => https://www.w3schools.com/js/js_math.asp
+
+17/01/2023 (Tuesday): 
+    => Worked on Angler LA Project 
+    => Comparison Operators 
+        => Comparison and Logical operators are used to test for true or false.
+        => Comparison operators are used in logical statements to determine equality or difference between variables or values.
+        => ==	equal to
+        => ===	equal value and equal type
+        => !=	not equal
+        => !==	not equal value or not equal type
+        => >	greater than
+        => <	less than
+        => >=	greater than or equal to
+        => <=	less than or equal to
+    => Logical Operators
+        => Logical operators are used to determine the logic between variables or values.
+        => &&	and	     : (x < 10 && y > 1) is true
+        => ||	or	     : (x == 5 || y == 5) is false
+        => !	not	     : !(x == y) is true
+    => Shallow Copy vs Deep Copy 
+        => Shallow Copy: 
+            => When a reference variable is copied into a new reference variable using the assignment operator, a shallow copy of the referenced object is created. 
+            => In simple words, a reference variable mainly stores the address of the object it refers to. 
+            => When a new reference variable is assigned the value of the old reference variable, the address stored in the old reference variable is copied into the new one.
+            => This means both the old and new reference variable point to the same object in memory. 
+            => As a result if the state of the object changes through any of the reference variables it is reflected for both.
+        => Deep Copy : 
+            => Unlike the shallow copy, deep copy makes a copy of all the members of the old object, allocates separate memory location for the new object and then assigns the copied members to the new object.
+            =>  In this way, both the objects are independent of each other and in case of any modification to either one the other is not affected. 
+            => Also, if one of the objects is deleted the other still remains in the memory.
+            => Now to create a deep copy of an object in JavaScript we use JSON.parse() and JSON.stringify() methods.
+    
+    => References :
+        => https://www.w3schools.com/js/js_comparisons.asp
+        => https://www.geeksforgeeks.org/what-is-shallow-copy-and-deep-copy-in-javascript/
+
+
+
+
 </pre>
