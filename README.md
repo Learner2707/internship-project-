@@ -831,6 +831,102 @@
         => https://www.w3schools.com/js/js_comparisons.asp
         => https://www.geeksforgeeks.org/what-is-shallow-copy-and-deep-copy-in-javascript/
 
+18/01/2023 (Wednesday): 
+    => Worked on Angler LA Project 
+    => Conditional Statements and Loops
+        => if else 
+            => The if Statement
+                => Use the if statement to specify a block of JavaScript code to be executed if a condition is true.
+                => if (condition) {
+                     //  block of code to be executed if the condition is true
+                    }
+                => The else Statement
+                    => Use the else statement to specify a block of code to be executed if the condition is false.
+                    => if (condition) {
+                         //  block of code to be executed if the condition is true
+                        } else {
+                                 //  block of code to be executed if the condition is false
+                                }
+                => The else if Statement
+                    => Use the else if statement to specify a new condition if the first condition is false.
+                    => if (condition1) {
+                             //  block of code to be executed if condition1 is true
+                        } else if (condition2) {
+                              //  block of code to be executed if the condition1 is false and condition2 is true
+                        } else {
+                            //  block of code to be executed if the condition1 is false and condition2 is false
+                        }
+        => switch statement : 
+            => The switch statement is used to perform different actions based on different conditions.
+            => Use the switch statement to select one of many code blocks to be executed.
+            => syntax : 
+                => switch(expression) {
+                        case x:
+                            // code block
+                            break;
+                        case y:
+                            // code block
+                            break;
+                        default:
+                            // code block
+                        }
+            => This is how it works :
+                => The switch expression is evaluated once.
+                => The value of the expression is compared with the values of each case.
+                => If there is a match, the associated block of code is executed.
+                => If there is no match, the default code block is executed.
+        
+        => Loops : 
+            => Different Kinds of Loops
+                => for - loops through a block of code a number of times
+                => for/in - loops through the properties of an object
+                => for/of - loops through the values of an iterable object
+                => while - loops through a block of code while a specified condition is true
+                => do/while - also loops through a block of code while a specified condition is true
+            => The For Loop
+                => The for statement creates a loop with 3 optional expressions:
+                => for (expression 1; expression 2; expression 3) {
+                     // code block to be executed
+                    }
+                => Expression 1 is executed (one time) before the execution of the code block.
+                => Expression 2 defines the condition for executing the code block.
+                => Expression 3 is executed (every time) after the code block has been executed.
+            => The While Loop
+                => The while loop loops through a block of code as long as a specified condition is true.
+                => while (condition) {
+                     // code block to be executed
+                    }
+            => The Do While Loop
+                => The do while loop is a variant of the while loop.
+                => This loop will execute the code block once, before checking if the condition is true, 
+                then it will repeat the loop as long as the condition is true.
+    => Array methods & iteration
+        => forEach
+            => The forEach() method calls a function for each element in an array.
+            => The forEach() method is not executed for empty elements.
+            => syntax : array.forEach(function(currentValue, index, arr), thisValue)
+                => function()	Required, A function to run for each array element.
+                => currentValue	Required, The value of the current element.
+                => index	Optional,The index of the current element.
+                => arr	Optional,The array of the current element.
+                => thisValue	Optional. Default undefined , A value passed to the function as its this value.
+        => array map
+            => map() creates a new array from calling a function for every array element.
+            => map() calls a function once for each element in an array.
+            => map() does not execute the function for empty elements.
+            => map() does not change the original array.
+            => syntax : array.map(function(currentValue, index, arr), thisValue)
+            => Return value : An array	(The results of a function for each array element) 
+
+
+    => References: 
+        => https://www.w3schools.com/js/js_if_else.asp
+        => https://www.w3schools.com/js/js_switch.asp
+        => https://www.w3schools.com/js/js_loop_while.asp
+        => https://www.w3schools.com/jsref/jsref_foreach.asp
+        => https://www.w3schools.com/jsref/jsref_map.asp
+
+        
 
 
 
