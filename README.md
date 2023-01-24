@@ -927,7 +927,49 @@
         => https://www.w3schools.com/jsref/jsref_map.asp
 
         
+19/01/2023 (Thursday): 
+    => Some Object methods 
+        => Object.keys()
+            => The Object.keys() method returns an Array Iterator object with the keys of an object.
+            => The Object.keys() method does not change the original object.
+            => syntax : Object.keys(object)
+        => Object.values()
+            => The Object.values() static method returns an array of a given object's own enumerable string-keyed property values.
+            => syntax: Object.values(obj)
+            => Object.values() returns an array whose elements are strings corresponding to the enumerable string-keyed property values found directly upon object
+        => Object.entries()
+            => The Javascript Object entries() method gives an array with enumerable property key-value pairs of a specified object.
+            => syntax : Object.entries(object) 
+    => Spread Operator 
+        => The Spread operator allows an iterable to expand in places where 0+ arguments are expected.
+        => It is mostly used in the variable array where there is more than 1 value is expected. 
+        => It allows us the privilege to obtain a list of parameters from an array. 
+        => Uses of spread operator
+            => Expand
+            => copy
+            => concatenate
+            => math object
+        => Using it for deep copy
+            => when copying arrays and objects into another variable without using spread operator , any mutation in new object/array also reflects in the original 
+            => to avoid this , we use spread operator for safely copying 
+                => // spread operator for copying 
+                => let arr = ['a','b','c'];
+                => let arr2 = [...arr];     
+                => console.log(arr); // [ 'a', 'b', 'c' ]      
+                => arr2.push('d'); //inserting an element at the end of arr2
+                => console.log(arr2); // [ 'a', 'b', 'c', 'd' ]
+                => console.log(arr); // [ 'a', 'b', 'c' ]
+            => Some Rules for using spread operator
+                => It should be used to spread same data type ie spread an array into an array and object into object , otherwise syntax error occurs
+                => It can be used for deep copy upto ine level of nesting only , after that it does shallow copy if used on nested object,array
+                    => If otherwise required then use:  const arr2= JSON.parse(JSON.stringify(arr1));
+        
 
+    => References : 
+        => https://www.w3schools.com/jsref/jsref_object_keys.asp
+        => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values
+        => https://www.w3schools.blog/object-entries-javascript-js
+        => https://www.geeksforgeeks.org/javascript-spread-operator/
 
 
 </pre>
