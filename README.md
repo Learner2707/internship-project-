@@ -971,5 +971,19 @@
         => https://www.w3schools.blog/object-entries-javascript-js
         => https://www.geeksforgeeks.org/javascript-spread-operator/
 
+20/01/2023 (Friday): 
+    => DOM manipulation 
+        => getElementById
+            => The getElementById() method returns an element with a specified value.
+            => The getElementById() method returns null if the element does not exist.
+        => getElementsByClassName()
+            => The getElementsByClassName() method returns a collection of elements with a specified class name(s).
+            => The getElementsByClassName() method returns an HTMLCollection.
+            => The getElementsByClassName() property is read-only.
+
+
+    => References : 
+        => https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+        => https://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp
 
 </pre>
