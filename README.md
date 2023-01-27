@@ -986,4 +986,52 @@
         => https://www.w3schools.com/jsref/met_document_getelementbyid.asp
         => https://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp
 
+23/01/2023 (Monday): 
+    => Functions: 
+        => A JavaScript function is a block of code designed to perform a particular task.
+        => A JavaScript function is executed when "something" invokes it (calls it).
+        => Function Declaration methods : 
+            => Function Declaration default method :
+                => syntax : function functionName(parameters) {
+                                // code to be executed
+                            }
+            => Function Expressions : 
+                => const x = function (a, b) {return a * b};
+                   let z = x(4, 3);
+            => Arrow Functions : 
+                => Arrow functions allow us to write shorter function syntax:
+                    => let myFunction = (a, b) => { return  a * b; }
+                    => If the function has only one statement, and the statement returns a value, you can remove the brackets and the return keyword:
+                        => let myFunction = (a, b) => a * b;
+                    => Arrow Functions Return Value by Default:
+                        => hello = () => "Hello World!";
+                    => Arrow Function Without Parentheses:
+                        => hello = val => "Hello " + val;
+        =>  Function Parameters anmd arguments: 
+            => function functionName(parameter1, parameter2, parameter3) {
+                      // code to be executed
+                }
+            => Function parameters are the names listed in the function definition.
+            => Function arguments are the real values passed to (and received by) the function.
+            => Arguments Object 
+                => JavaScript functions have a built-in object called the arguments object.
+                => The argument object contains an array of the arguments used when the function was called (invoked).
+            => Arguments are Passed by Value
+            => Objects are Passed by Reference
+        => IIFE (Immediately Invoked Function Expression)
+            => An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. 
+            => Uses : Saves memory as once the function is executed , the whole function memory is garbage collected ie memory is set free
+
+    => References :
+        => https://www.w3schools.com/js/js_arrow_function.asp
+        => https://www.w3schools.com/js/js_function_definition.asp
+        => https://www.w3schools.com/js/js_function_parameters.asp
+        => https://developer.mozilla.org/en-US/docs/Glossary/IIFE 
+
+24/01/2023 (Tuesday):   
+    => Practised functions 
+    => Working Files: =>  Javascript/
+                      => README.md
+
+
 </pre>
