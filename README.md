@@ -1030,8 +1030,48 @@
 
 24/01/2023 (Tuesday):   
     => Practised functions 
+    => this keyword 
+        => In JavaScript, the this keyword refers to an object.
+        => Which object depends on how this is being invoked (used or called).
+        => The this keyword refers to different objects depending on how it is used:
+            => In an object method, this refers to the object.
+            => Alone, this refers to the global object.
+            => In a function, this refers to the global object.
+            => In a function, in strict mode, this is undefined.
+            => In an event, this refers to the element that received the event.
+            => Methods like call(), apply(), and bind() can refer this to any object.
+        => this is not a variable. It is a keyword. You cannot change the value of this.
+        => This Precedence
+            => 1) bind()   2) apply() and call()      3)Object method         4)Global scope
+            => Is this in a function being called using bind()?
+            => Is this in a function being called using apply()?
+            => Is this in a function being called using call()?
+            => Is this in an object function (method)?
+            => Is this in a function in the global scope.
+    => call() method
+        => The call() method is a predefined JavaScript method.
+        => It can be used to invoke (call) a method with an owner object as an argument (parameter).
+        => With call(), an object can use a method belonging to another object.
+        => The call() method can also accept arguments
+    => apply() method
+        => With the apply() method, you can write a method that can be used on different objects.
+        => The apply() method is similar to the call() method 
+        => The Difference Between call() and apply() : 
+            => The call() method takes arguments separately.
+            => The apply() method takes arguments as an array.
+    => bind() method 
+        => With the bind() method, an object can borrow a method from another object.
+        => Preserving this
+            => Sometimes the bind() method has to be used to prevent losing this.
+            => When a function is used as a callback, "this" is lost.
+            => The bind() method solves this problem by binding the "this"  to specific object as provided.
+
     => Working Files: =>  Javascript/
                       => README.md
-
+    => References :
+        => https://www.w3schools.com/js/js_this.asp
+        => https://www.w3schools.com/js/js_function_call.asp
+        => https://www.w3schools.com/js/js_function_apply.asp
+        => https://www.w3schools.com/js/js_function_bind.asp
 
 </pre>

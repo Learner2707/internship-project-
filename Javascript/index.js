@@ -34,6 +34,5 @@ console.log(sum_result_arrow);
 
 }
 
-
 }
 
