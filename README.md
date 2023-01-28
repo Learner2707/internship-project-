@@ -1073,5 +1073,5 @@
         => https://www.w3schools.com/js/js_function_call.asp
         => https://www.w3schools.com/js/js_function_apply.asp
         => https://www.w3schools.com/js/js_function_bind.asp
-
+  
 </pre>
