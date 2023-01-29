@@ -1073,5 +1073,31 @@
         => https://www.w3schools.com/js/js_function_call.asp
         => https://www.w3schools.com/js/js_function_apply.asp
         => https://www.w3schools.com/js/js_function_bind.asp
-  
+
+25/01/2023 (Wednesday): 
+    => Practiced this keyword, call() , apply(), bind()
+    => Hoisting: 
+        => Hoisting is a concept that enables us to extract values of variables and functions even before initializing/assigning value without getting errors and this happens during the 1st phase (memory creation phase) of the Execution Context.
+        => Features of Hoisting:
+            => In JavaScript, Hoisting is the default behavior of moving all the declarations at the top of the scope before code execution.
+            => Basically, it gives us an advantage that no matter where functions and variables are declared, they are moved to the top of their scope(not literally, just for our understanding) regardless of whether their scope is global or local. 
+            => Basically,
+                => var is hoisted and assigned a value undefined
+                => function() is hoisted and assigned a value of full function itself
+                => let is hoisted but it stays in TEMPORAL DEAD ZONE (TDZ) before it is actually assigned a value, Usage before actual initialization of let results in ReferenceError: Cannot access 'a' before initialization
+                => const also gets hoisted and remains in TDZ same as let, usage before actual initialization of const also results in ReferenceError: Cannot access 'a' before initialization
+            => It allows us to call functions before even writing them in our code. 
+        => JavaScript only hoists declarations, not initializations.
+        => JavaScript allocates memory for all variables and functions defined in the program before execution.
+        => Sequence of variable declaration:    Declaration –> Initialisation/Assignment –> Usage 
+    => Working of Javascript 
+    => Callstack, Event Loop, Execution Context, Callback Queue/ Task Queue, MicroTask Queue   
+    => Working Files: =>  Javascript/
+                      => README.md
+    => References : 
+        => https://www.geeksforgeeks.org/javascript-hoisting/
+        => https://www.w3schools.com/js/js_hoisting.asp
+        => https://www.youtube.com/watch?v=Fnlnw8uY6jo&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=4   (Hoisting)
+        => https://www.youtube.com/watch?v=ZvbzSrg0afE&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=2   (Working of Javascript)
+        => https://www.youtube.com/watch?v=iLWTnMzWtj4&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=3   (Execution of JS Code)
 </pre>
