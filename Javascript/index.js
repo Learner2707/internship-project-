@@ -127,3 +127,24 @@
     }
   }
 }
+{// 27/01/2023 (Friday)
+  { // ============================================  Hoisting  ========================================
+    console.log(a_hoist);    //will show undefined
+    var a_hoist = 5;    
+    //console.log(b);   // will result in ReferenceError 
+    let b = 5;
+    //console.log(c);   // will result in ReferenceError 
+    const c = 5;
+    hoisted();
+    function hoisted(){
+      console.log("Function is hoisted if it is declared this way. ");
+    }
+    //hoisting_func_exp();  // this results error saying that it is not a function
+    var hoisting_func_exp = function(){
+      console.log("Function does not get hoisted if declared using function expression method")
+    }
+
+
+  }
+
+}
