@@ -1100,4 +1100,10 @@
         => https://www.youtube.com/watch?v=Fnlnw8uY6jo&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=4   (Hoisting)
         => https://www.youtube.com/watch?v=ZvbzSrg0afE&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=2   (Working of Javascript)
         => https://www.youtube.com/watch?v=iLWTnMzWtj4&list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP&index=3   (Execution of JS Code)
+
+27/01/2023 (Friday):
+    => Practiced Hoisting
+    => Worked on Angler LA
+    => Working Files: =>  Javascript/
+                      => README.md
 </pre>
