@@ -1106,4 +1106,66 @@
     => Worked on Angler LA
     => Working Files: =>  Javascript/
                       => README.md
+30/01/2023 (Monday):
+    => Destructuring:
+        => Destructuring means to break down a complex structure into simpler parts.
+        => With the syntax of destructuring, you can extract smaller fragments from objects and arrays. It can be used for assignments and declaration of a variable.
+        => Destructuring is an efficient way to extract multiple values from data that is stored in arrays or objects. 
+        => When destructuring an array, we use their positions (or index) in an assignment.
+    => Array Destructuring and rest operator: 
+        => By using the rest operator (…) in array destructuring, you can put all the remaining elements of an array in a new array.
+        => var colors = ["Violet", "Indigo", "Blue", "Green", "Yellow", "Orange", "Red"];   
+            var [a,b,...args] = colors;  // destructuring assignment 
+    => Array destructuring and Default values
+        => If you are taking a value from the array and that value is undefined, then you can assign a default value to a variable.  
+        => var [x=50, y=70] = [100];  
+        => console.log(x); // 100  
+            console.log(y); // 70  
+    => Swapping Variables
+        => The values of the two variables can be swapped in one destructuring expression. 
+        => The array destructuring makes it easy to swap the values of variables without using any temporary variable.
+        => var x = 100, y = 200;  
+            [x, y] = [y, x];  
+            console.log(x); // 200  
+            console.log(y); // 100 
+    => Object Destructuring : 
+        => It is similar to array destructuring except that instead of values being pulled out of an array, the properties (or keys) and their corresponding values can be pulled out from an object.
+        => When destructuring the objects, we use keys as the name of the variable. The variable name must match the property (or keys) name of the object. If it does not match, then it receives an undefined value. This is how JavaScript knows which property of the object we want to assign.
+        => const num = {x: 100, y: 200};  
+            const {x, y} = num; 
+            console.log(x); // 100  
+            console.log(y); // 200   
+        => Assigning new variable names
+            => const num = {x: 100, y: 200};  
+                const {x: new1, y: new2} = num;  
+                console.log(new1); //100   
+                console.log(new2); //200  
+        => Assignment without declaration
+            => if the value of the variable is not assigned when you declare it, then you can assign its value during destructuring
+            => let name, division;  
+                ({name, division} = {name: 'Anil', division: 'First'});   // use of () is mandatory here
+                console.log(name); // Anil  
+                console.log(division); // First 
+            => In the above example, it is to be noted that the use of parentheses () around the assignment statement is mandatory when using variable destructuring assignment without a declaration. Otherwise, the syntax will be invalid. 
+            => const numbers = [];
+                const obj = { a: 1, b: 2 };
+                ({ a: numbers[0], b: numbers[1] } = obj);
+                // The properties `a` and `b` are assigned to properties of `numbers`
+        => Object destructuring and rest operator : 
+            => By using the rest operator (…) in object destructuring, we can put all the remaining keys of an object in a new object variable.
+            => let {a, b, ...args} = {a: 100, b: 200, c: 300, d: 400, e: 500}  
+                console.log(a);    // 100
+                console.log(b);    // 200
+                console.log(args);   //{ c: 300, d: 400, e: 500 }
+        => Assigning new variable names and providing default values simultaneously
+            => A property that is unpacked from an object can be assigned to a variable with a different name. And the default value is assigned to it in case the unpacked value is undefined.
+            => const {a:num1=100, b:num2=200} = {a:300};  
+                console.log(num1); //300  
+                console.log(num2); //200  
+
+
+    => References : 
+        => https://www.javatpoint.com/es6-array-destructuring
+        => https://www.w3schools.com/react/react_es6_destructuring.asp
+        => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 </pre>
