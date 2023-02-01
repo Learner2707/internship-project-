@@ -1168,4 +1168,15 @@
         => https://www.javatpoint.com/es6-array-destructuring
         => https://www.w3schools.com/react/react_es6_destructuring.asp
         => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+01/02/2023 (Wednesday) : 
+    => Worked on Project Repo 
+    => Research on carousel 
+    => Working Files :
+        => Project/
+        => README.md
+    => References : 
+        => https://blog.logrocket.com/build-image-carousel-from-scratch-vanilla-javascript/
+        => https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hide_scrollbar_keep_func
+        => https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow
 </pre>
