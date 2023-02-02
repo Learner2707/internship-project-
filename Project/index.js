@@ -1,10 +1,11 @@
+// Attempt 1
 
 // function move(){
 
 // // Select all slides
 // const slides = document.querySelectorAll(".testimonial-card");
 // console.log(slides);
-// // loop through slides and set each slides translateX property to index * 100% 
+// // loop through slides and set each slides translateX property to index * 100%
 // slides.forEach((slide, indx) => {
 //   slide.style.transform = `translateX(${indx * 41}%)`;
 // });
@@ -33,12 +34,17 @@
 // });
 // }
 
+// Attempt 2
 
-let allCards = document.getElementById("testimonial-cards");
-let card = allCards.getElementsByClassName("testimonial-card");
-function next(){
-    allCards.append(card[0]);
+let cardsWrapper = document.getElementById("testimonial-cards-wrapper");
+let cards = cardsWrapper.getElementsByClassName("testimonial-card");
+function next() {
+  cardsWrapper.scrollLeft += cards[0].clientWidth+300;
+  
+  // cardsWrapper.append(cards[0]);
 }
-function prev(){
-    allCards.prepend(card[card.length-1]);
+function prev() {
+  cardsWrapper.scrollLeft -= cards[0].clientWidth+300;
 }
+
+// Attempt 3
