@@ -10,23 +10,35 @@
 // });
 // }
 
+// function next(){
+//     const slides = document.querySelectorAll(".testimonial-card");
+// const nextSlide = document.querySelector(".next-btn");
+// let curSlide=0;
+// // let curSlide = Math.floor((Math.random()) * 10);
+// console.log(curSlide);
+// let maxSlide = slides.length - 1;
+
+// nextSlide.addEventListener("click", function () {
+//   if (curSlide === maxSlide) {
+//     curSlide = 0;
+//   } else {
+//     curSlide++;
+//   }
+
+//   slides.forEach((slide, indx) => {
+//     // slide.style.transform = `translateX(${-110 * (indx - curSlide)}%)`;
+//     slide.style.transform = `translateX(${-110}%)`;
+//     console.log("Next clicked");
+//   });
+// });
+// }
+
+
+let allCards = document.getElementById("testimonial-cards");
+let card = allCards.getElementsByClassName("testimonial-card");
 function next(){
-    const slides = document.querySelectorAll(".testimonial-card");
-const nextSlide = document.querySelector(".next-btn");
-
-let curSlide = 0;
-let maxSlide = slides.length - 1;
-
-nextSlide.addEventListener("click", function () {
-  if (curSlide === maxSlide) {
-    curSlide = 0;
-  } else {
-    curSlide++;
-  }
-
-  slides.forEach((slide, indx) => {
-    // slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-    slide.style.transform = `translateX(${-100}%)`;
-  });
-});
+    allCards.append(card[0]);
+}
+function prev(){
+    allCards.prepend(card[card.length-1]);
 }
