@@ -1179,4 +1179,25 @@
         => https://blog.logrocket.com/build-image-carousel-from-scratch-vanilla-javascript/
         => https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hide_scrollbar_keep_func
         => https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow
+02/02/2023 (Thursday) : 
+    => Worked on Project Repo 
+    => Research on carousel 
+    => Working Files :
+        => Project/
+        => README.md
+    =>  References: 
+        => https://codepen.io/hershkirsh/pen/BXBprB
+        => https://stackoverflow.com/questions/60577870/how-to-add-smooth-transition-between-first-and-last-slide-of-a-carousel
+        => https://www.w3schools.com/howto/howto_js_toggle_class.asp
+        
+02/02/2023 (Thursday) : 
+    => Worked on Project Repo 
+    => Research on carousel 
+    => Working Files :
+        => Project/
+        => README.md
+    =>  References: 
+        => https://www.codementor.io/@olatundeowokoniran/javascript-tutorial-understanding-append-prepend-after-and-before-qmgkumkyn
+        => https://github.com/DaveyHert/Image-carousel-slider/commit/02be3aa300e998a3bdf549004003091517215485
+
 </pre>
