@@ -1190,7 +1190,7 @@
         => https://stackoverflow.com/questions/60577870/how-to-add-smooth-transition-between-first-and-last-slide-of-a-carousel
         => https://www.w3schools.com/howto/howto_js_toggle_class.asp
         
-02/02/2023 (Thursday) : 
+03/02/2023 (Friday) : 
     => Worked on Project Repo 
     => Research on carousel 
     => Working Files :
