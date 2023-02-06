@@ -1199,5 +1199,21 @@
     =>  References: 
         => https://www.codementor.io/@olatundeowokoniran/javascript-tutorial-understanding-append-prepend-after-and-before-qmgkumkyn
         => https://github.com/DaveyHert/Image-carousel-slider/commit/02be3aa300e998a3bdf549004003091517215485
+06/02/2023 (Monday) : 
+    => Worked on Project Repo 
+    => Research on carousel
+    => Fully Functional Carousel except mobile version 
+    => Working Files :
+        => Project/
+        => README.md
+    =>  References: 
+        => https://stackoverflow.com/questions/3557266/cant-set-disabled-false-javascript
+        => https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior
+        => https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollX
+        => https://developer.mozilla.org/en-US/docs/Web/API/Element/scroll_event
+        => https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollWidth
+        => https://stackoverflow.com/questions/4081064/how-to-get-the-number-of-pixels-a-user-has-scrolled-down-the-page
+        => https://www.freecodecamp.org/news/how-to-convert-a-string-to-a-number-in-javascript/
+        => https://web.dev/css-scroll-snap/    (Snap Scroll)
 
 </pre>
