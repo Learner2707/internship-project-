@@ -453,7 +453,7 @@
   /*================================ Testimonial Section  ================================================================*/
   .testimonial-card {
     padding: 30px;
-    width: 72%;
+    min-width: 72%;
   }
   .testimonial-card-content {
     font-size: 14px;
@@ -669,7 +669,7 @@
   /*================================ Testimonial Section  ================================================================*/
   .testimonial-card {
     padding: 30px;
-    width: 72%;
+    min-width: 72%;
   }
   .testimonial-card-content {
     font-size: 14px;
@@ -882,7 +882,7 @@
   /*================================ Testimonial Section  ================================================================*/
   .testimonial-card {
     padding: 30px;
-    width: 88%;
+    min-width: 88%;
   }
   .testimonial-card-content {
     font-size: 14px;
