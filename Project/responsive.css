@@ -880,17 +880,21 @@
   }
 
   /*================================ Testimonial Section  ================================================================*/
+  .testimonial-cards-wrapper{
+    gap: 15px;
+  }
   .testimonial-card {
     padding: 30px;
-    min-width: 88%;
+    min-width: 100%;
   }
   .testimonial-card-content {
-    font-size: 14px;
+    font-size: 13px;
+    padding: 12px 0px;
   }
   .testimonial-pagination-visibility {
     display: none;
   }
-  .testimonial-pagination {
+  .testimonial-pagination { 
     display: none;
   }
   .testimonial-carousel {
