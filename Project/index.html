@@ -21,32 +21,55 @@
 
   <!-- =================================   Header Section   ======================================================= -->
 
-  <div class="fixed-header">
-    <div class="header-bg">
-      <div class="container">
-        <header>
-          <ul class="header-ul header-nav-bar">
-            <li class="header-logo-section">
-              <img src="./assets/headerlogo.svg" alt="logo" class="headerlogo" />
-              <img src="./assets/headerCompanyName.svg" alt="Repo" />
-            </li>
-            <li class="desktop-visibility">Solution</li>
-            <li class="desktop-visibility">Pricing</li>
-            <li class="desktop-visibility">Demo</li>
-            <li class="desktop-visibility">Download</li>
-            <li class="desktop-visibility">Contact Sales</li>
-          </ul>
-          <ul class="header-ul header-signin-section desktop-visibility">
-            <li>Sign in</li>
-            <li><button class="global-btn-style header-btn">Get it free</button></li>
-          </ul>
-
-          <button class="global-btn-style header-btn-mobile mobile-visibility">Menu</button>
-        </header>
-
+  
+    <div class="fixed-header">
+      <div class="header-bg">
+        <div class="container">
+          <header>
+          <div class="header-left-portion">
+            <ul class="header-ul header-nav-bar">
+              <li class="header-logo-section">
+                <img src="./assets/headerlogo.svg" alt="logo" class="headerlogo" />
+                <img src="./assets/headerCompanyName.svg" alt="Repo" />
+              </li>
+            </ul>
+            <ul class="header-ul header-nav-bar desktop-visibility">
+              <li >Solution</li>
+              <li >Pricing</li>
+              <li >Demo</li>
+              <li >Download</li>
+              <li >Contact Sales</li>
+            </ul>
+          </div>
+          <div class="header-right-portion">
+              <ul class="header-ul header-signin-section desktop-visibility">
+                <li>Sign in</li>
+                <li><button class="global-btn-style header-btn">Get it free</button></li>
+              </ul>
+          </div>
+          
+  
+            <button class="global-btn-style header-btn-mobile mobile-visibility" onclick="openMenu()">Menu</button>
+          </header>
+          
+  
+        </div>
       </div>
     </div>
-  </div>
+  
+    <div class="nav-menu-mobile dropdown-visibility" id="navbar-dropdown">
+        <ul class="nav-menu-mobile-ul">
+          <li >Solution</li>
+          <li >Pricing</li>
+          <li >Demo</li>
+          <li >Download</li>
+          <li >Contact Sales</li>
+          <li>Sign in</li>
+          <li><button class="global-btn-style header-btn">Get it free</button></li>
+      
+        </ul>
+    </div>
+  
 
   <!-- ================================    Top Section  =========================================================== -->
   <div class="header-bg">

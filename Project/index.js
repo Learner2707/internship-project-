@@ -156,3 +156,14 @@ cardsWrapper.onscroll=function(){
   (scrolledWidth===totalScrollWidth) ? (nextButton.classList.add("disabled-btn")) : (nextButton.classList.remove("disabled-btn"));
   (cardsWrapper.scrollLeft===0) ? (prevButton.classList.add("disabled-btn")) : (prevButton.classList.remove("disabled-btn"));
 };
+
+
+
+
+//Navbar Menu Mobile
+function openMenu(){
+  document.getElementById("navbar-dropdown").classList.toggle("dropdown-visible");
+  document.body.classList.toggle("disable-scoll");
+  let headerHeight=document.getElementsByClassName("fixed-header")[0].clientHeight;
+  document.getElementsByClassName("nav-menu-mobile")[0].style.top=`${headerHeight}px`;
+}

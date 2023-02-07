@@ -89,6 +89,10 @@ header {
   font-size: 14px;
   line-height: 17.36px;
 }
+.header-left-portion{
+  display: flex;
+  column-gap: 40px;
+}
 .header-ul {
   display: flex;
   align-items: center;
@@ -108,6 +112,33 @@ header {
 }
 .header-signin-section {
   gap: 64px;
+}
+.nav-menu-mobile{
+  overflow-y: scroll;
+  position: absolute;
+  left: 0%;
+  z-index: 99;
+  background-color: #f5faff;
+  width: 100%;
+}
+.nav-menu-mobile-ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  padding: 10px 0;
+}
+.nav-menu-mobile-ul li:hover, .nav-menu-mobile-ul li:focus {
+  color: #3097f5;
+}
+.dropdown-visibility{
+  display: none;
+}
+.dropdown-visible{
+  display: block;
+}
+.disable-scoll{
+  overflow-y: hidden;
 }
 
 /*============================================== Top Section  ===========================================================*/
