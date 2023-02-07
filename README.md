@@ -1215,5 +1215,19 @@
         => https://stackoverflow.com/questions/4081064/how-to-get-the-number-of-pixels-a-user-has-scrolled-down-the-page
         => https://www.freecodecamp.org/news/how-to-convert-a-string-to-a-number-in-javascript/
         => https://web.dev/css-scroll-snap/    (Snap Scroll)
+07/02/2023 (Tuesday) : 
+    => Worked on Project Repo 
+    => Research on carousel
+    => Fully Functional Carousel
+    => Worked on mobile navbar opening functionality
+    => Working Files :
+        => Project/
+        => README.md
+    =>  References: 
+        => https://www.w3schools.com/howto/howto_js_curtain_menu.asp
+        => https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay
+        => https://levelup.gitconnected.com/how-easy-i-code-a-hamburger-menu-with-css-and-javascript-5537d5669aa
+        => https://www.w3schools.com/css/css3_transitions.asp
+        => https://stackoverflow.com/questions/27230955/how-to-disable-scrolling-in-the-background-when-the-mobile-menu-is-open
 
 </pre>
