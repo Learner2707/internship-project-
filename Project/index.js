@@ -164,25 +164,39 @@ cardsWrapper.onscroll = function () {
 };
 
 //Navbar Menu Mobile
+
+function onMenuClick() {
+  let mobileMenu = document.getElementById("navbar-dropdown");
+  if (!mobileMenu.classList.contains("dropdown-visible")) {
+    openMenu();
+  } else {
+    closeMenu();
+  }
+
+}
+
 function openMenu() {
   let headerHeight = document.getElementsByClassName("fixed-header")[0].clientHeight;
   let scrolledHeight = window.scrollY;
   let mobileMenu = document.getElementById("navbar-dropdown");
-
-  mobileMenu.classList.toggle("dropdown-visible");
-  document.body.classList.toggle("disable-scoll");
+  mobileMenu.classList.add("dropdown-visible");
+  document.body.classList.add("disable-scoll");
   mobileMenu.style.top = `${headerHeight + scrolledHeight - 0.5}px`;
   mobileMenu.style.height = `${window.innerHeight - headerHeight}px`;
-  document.getElementById("nav-menu-text").classList.toggle("nav-menu-text-visibility");
-  document.getElementById("menu-close-btn").classList.toggle("close-btn-visibility");
-
+  document.getElementById("nav-menu-text").classList.add("nav-menu-text-visibility");
+  document.getElementById("menu-close-btn").classList.remove("close-btn-visibility");
 }
-window.onresize=function(){
-  if(document.body.clientWidth>=768){
-    document.getElementById("navbar-dropdown").classList.remove("dropdown-visible");
-    document.body.classList.remove("disable-scoll");
+
+function closeMenu() {
+  document.getElementById("navbar-dropdown").classList.remove("dropdown-visible");
+  document.body.classList.remove("disable-scoll");
 
   document.getElementById("nav-menu-text").classList.remove("nav-menu-text-visibility");
-  document.getElementById("menu-close-btn").classList.remove("close-btn-visibility");
+  document.getElementById("menu-close-btn").classList.add("close-btn-visibility");
+}
+
+window.onresize=function(){
+  if (document.body.clientWidth >= 768) {
+    closeMenu();
   }
 }
