@@ -35,7 +35,6 @@ nextSlide.addEventListener("click", function () {
 }
 */
 
-
 // // Attempt 2
 /*
 let cardsWrapper = document.getElementById("testimonial-cards-wrapper");
@@ -140,30 +139,52 @@ function reset(){
 }
 */
 
-
-// Attempt 4
+// Attempt 4 
+// Carousel Final 
 let cardsWrapper = document.getElementById("testimonial-cards-wrapper");
 let cards = document.getElementsByClassName("testimonial-card");
-let gap=document.getElementsByClassName("testimonial-cards-wrapper")[0].style.gap;
-let nextButton=document.getElementById("next-btn");
-let prevButton=document.getElementById("prev-btn");
-(cardsWrapper.scrollLeft===0) ? (prevButton.classList.add("disabled-btn")) : (prevButton.classList.remove("disabled-btn"));
-const next=()=>cardsWrapper.scrollLeft += cards[0].clientWidth + (+gap);
-const prev =()=>  cardsWrapper.scrollLeft -= cards[0].clientWidth + (+gap);
-cardsWrapper.onscroll=function(){
-  let scrolledWidth= cardsWrapper.scrollLeft + cardsWrapper.clientWidth;
-  let totalScrollWidth=cardsWrapper.scrollWidth;
-  (scrolledWidth===totalScrollWidth) ? (nextButton.classList.add("disabled-btn")) : (nextButton.classList.remove("disabled-btn"));
-  (cardsWrapper.scrollLeft===0) ? (prevButton.classList.add("disabled-btn")) : (prevButton.classList.remove("disabled-btn"));
+let gap = document.getElementsByClassName("testimonial-cards-wrapper")[0].style
+  .gap;
+let nextButton = document.getElementById("next-btn");
+let prevButton = document.getElementById("prev-btn");
+cardsWrapper.scrollLeft === 0
+  ? prevButton.classList.add("disabled-btn")
+  : prevButton.classList.remove("disabled-btn");
+const next = () => (cardsWrapper.scrollLeft += cards[0].clientWidth + +gap);
+const prev = () => (cardsWrapper.scrollLeft -= cards[0].clientWidth + +gap);
+cardsWrapper.onscroll = function () {
+  let scrolledWidth = cardsWrapper.scrollLeft + cardsWrapper.clientWidth;
+  let totalScrollWidth = cardsWrapper.scrollWidth;
+  scrolledWidth === totalScrollWidth
+    ? nextButton.classList.add("disabled-btn")
+    : nextButton.classList.remove("disabled-btn");
+  cardsWrapper.scrollLeft === 0
+    ? prevButton.classList.add("disabled-btn")
+    : prevButton.classList.remove("disabled-btn");
 };
 
-
-
-
 //Navbar Menu Mobile
-function openMenu(){
-  document.getElementById("navbar-dropdown").classList.toggle("dropdown-visible");
+function openMenu() {
+  let headerHeight = document.getElementsByClassName("fixed-header")[0].clientHeight;
+  let scrolledHeight = window.scrollY;
+  // let mobileMenu = document.getElementsByClassName("nav-menu-mobile")[0];
+  let mobileMenu = document.getElementById("navbar-dropdown");
+
+  mobileMenu.classList.toggle("dropdown-visible");
+  // document.getElementById("navbar-dropdown").classList.toggle("dropdown-visible");
   document.body.classList.toggle("disable-scoll");
-  let headerHeight=document.getElementsByClassName("fixed-header")[0].clientHeight;
-  document.getElementsByClassName("nav-menu-mobile")[0].style.top=`${headerHeight}px`;
+  mobileMenu.style.top = `${headerHeight + scrolledHeight - 0.5}px`;
+  mobileMenu.style.height = `${window.innerHeight - headerHeight}px`;
+  document.getElementById("nav-menu-text").classList.toggle("nav-menu-text-visibility");
+  document.getElementById("menu-close-btn").classList.toggle("close-btn-visibility");
+
+}
+window.onresize=function(){
+  if(document.body.clientWidth>=768){
+    document.getElementById("navbar-dropdown").classList.remove("dropdown-visible");
+    document.body.classList.remove("disable-scoll");
+
+  document.getElementById("nav-menu-text").classList.remove("nav-menu-text-visibility");
+  document.getElementById("menu-close-btn").classList.remove("close-btn-visibility");
+  }
 }

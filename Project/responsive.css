@@ -465,7 +465,8 @@
     display: none;
   }
   .testimonial-carousel {
-    display: flex;
+    /* display: flex; */
+    display: none;
   }
 
   /*======================================= Get Started Section  ========================================================*/
@@ -497,6 +498,9 @@
   .container {
     max-width: 440px;
     margin: 0 auto;
+  }
+  body::-webkit-scrollbar {
+    display: none;
   }
   /* ===================================   Global Variables  ======================================================= */
   :root {
@@ -681,7 +685,8 @@
     display: none;
   }
   .testimonial-carousel {
-    display: flex;
+    /* display: flex; */
+    display: none;
   }
 
   /*======================================= Get Started Section  ========================================================*/
@@ -898,7 +903,8 @@
     display: none;
   }
   .testimonial-carousel {
-    display: flex;
+    /* display: flex; */
+    display: none;
   }
 
   /*======================================= Get Started Section  ========================================================*/

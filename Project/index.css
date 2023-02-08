@@ -120,13 +120,14 @@ header {
   z-index: 99;
   background-color: #f5faff;
   width: 100%;
+  /* height: 100vh; */
 }
 .nav-menu-mobile-ul{
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 30px;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 .nav-menu-mobile-ul li:hover, .nav-menu-mobile-ul li:focus {
   color: #3097f5;
@@ -139,6 +140,22 @@ header {
 }
 .disable-scoll{
   overflow-y: hidden;
+}
+.nav-menu-mobile::-webkit-scrollbar {
+  display: none;
+}
+#menu-close-btn{
+  /* font-size: 60px; */
+  font-weight: var(--boldFontWeight);
+}
+.close-btn-visibility{
+  display: none;
+}
+.nav-menu-text{
+  font-weight: var(--boldFontWeight);
+}
+.nav-menu-text-visibility{
+  display: none;
 }
 
 /*============================================== Top Section  ===========================================================*/
@@ -417,10 +434,7 @@ section.top-section {
   font-weight: var(--boldFontWeight);
 }
 
-.testimonial-cards-container{
-  /* overflow: hidden; */
-  
-}
+
 .testimonial-cards-wrapper::-webkit-scrollbar {
   display: none;
 }
