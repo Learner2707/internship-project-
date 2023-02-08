@@ -1230,4 +1230,17 @@
         => https://www.w3schools.com/css/css3_transitions.asp
         => https://stackoverflow.com/questions/27230955/how-to-disable-scrolling-in-the-background-when-the-mobile-menu-is-open
 
+08/02/2023 (Wednesday) : 
+    => Worked on Project Repo 
+    => Completed a design of mobile navbar dropdown
+    => Working Files :
+        => Project/
+        => README.md
+    =>  References: 
+        => https://zellwk.com/blog/css-values-in-js/   ( How to get CSS values in JavaScript )
+        => https://www.w3schools.com/jsref/prop_element_scrollheight.asp
+        => https://www.w3schools.com/jsref/prop_element_scrollwidth.asp
+        => https://stackoverflow.com/questions/64216895/javascript-is-it-possible-to-determine-how-much-user-scrolls-after-reaching-the    (calculate scrolled height of body)
+        => 
+
 </pre>
