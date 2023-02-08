@@ -886,11 +886,11 @@
 
   /*================================ Testimonial Section  ================================================================*/
   .testimonial-cards-wrapper{
-    gap: 15px;
+    gap: 10px;
   }
   .testimonial-card {
     padding: 30px;
-    min-width: 100%;
+    min-width: 83%;
   }
   .testimonial-card-content {
     font-size: 13px;

@@ -167,11 +167,9 @@ cardsWrapper.onscroll = function () {
 function openMenu() {
   let headerHeight = document.getElementsByClassName("fixed-header")[0].clientHeight;
   let scrolledHeight = window.scrollY;
-  // let mobileMenu = document.getElementsByClassName("nav-menu-mobile")[0];
   let mobileMenu = document.getElementById("navbar-dropdown");
 
   mobileMenu.classList.toggle("dropdown-visible");
-  // document.getElementById("navbar-dropdown").classList.toggle("dropdown-visible");
   document.body.classList.toggle("disable-scoll");
   mobileMenu.style.top = `${headerHeight + scrolledHeight - 0.5}px`;
   mobileMenu.style.height = `${window.innerHeight - headerHeight}px`;
