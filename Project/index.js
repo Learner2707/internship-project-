@@ -196,7 +196,8 @@ function closeMenu() {
 }
 
 window.onresize=function(){
-  if (document.body.clientWidth >= 768) {
-    closeMenu();
-  }
+  closeMenu();
+  // if (document.body.clientWidth >= 768) {
+  //   closeMenu();
+  // }
 }
