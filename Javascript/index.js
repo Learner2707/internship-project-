@@ -195,18 +195,17 @@
       // Assignment without declaration
       const numbers = [];
       const obj = { a: 1, b: 2 };
-      ({ a: numbers[0], b: numbers[1] } = obj);  // The properties `a` and `b` are assigned to properties of `numbers`
+      ({ a: numbers[0], b: numbers[1] } = obj); // The properties `a` and `b` are assigned to properties of `numbers`
       /* Note: The parentheses ( ... ) around the assignment statement are required when using object literal destructuring assignment without a declaration.
         { a, b } = { a: 1, b: 2 } is not valid stand-alone syntax, as the {a, b} on the left-hand side is considered a block and not an object literal.
          However, ({ a, b } = { a: 1, b: 2 }) is valid, as is const { a, b } = { a: 1, b: 2 }.
       */
 
-
       // Assigning new variable names and providing default values simultaneously
-      const {a:num1=100, b:num2=200} = {a:300};  
-      console.log(num1); //300  
-      console.log(num2); //200  
-    }  
+      const { a: num1 = 100, b: num2 = 200 } = { a: 300 };
+      console.log(num1); //300
+      console.log(num2); //200
+    }
 
     // ==========================================  Array Destructuring  =======================================
     {
@@ -215,7 +214,7 @@
       console.log(a, b, c);
 
       // using rest operator
-      const [d, e, ...others] = arr; 
+      const [d, e, ...others] = arr;
       console.log(d, e);
       console.log(others);
 
@@ -223,16 +222,37 @@
         console.log(a + b + other_numbers.reduce((prev, curr) => prev + curr));
       }
       calculate_sum(arr);
-      
-      
-      //using spread operator 
+
+      //using spread operator
       console.log([...arr]);
-      
-      function cal_sum_using_spread([...numbers]){
+
+      function cal_sum_using_spread([...numbers]) {
         console.log(numbers.reduce((prev, curr) => prev + curr));
       }
       cal_sum_using_spread(arr);
     }
   }
 }
-//
+//9/02/2023 (Thursday)
+{
+  //   ============================================== Sorting  ==========================================================
+  {
+    //  Merge Sort
+    function mergeSort (arr) {
+      if (arr.length < 2) return arr;
+      let mid = Math.floor(arr.length /2);
+      let subLeft = mergeSort(arr.slice(0,mid));
+      let subRight = mergeSort(arr.slice(mid));
+      return merge(subLeft, subRight);
+    }
+    function merge (a,b) {
+      let result = [];
+      while (a.length >0 && b.length >0)
+          result.push(a[0] < b[0]? a.shift() : b.shift());
+      return result.concat(a.length? a : b);
+  }
+  let test = [5,6,7,3,1,3,15];
+console.log(mergeSort(test));
+  }
+
+}
