@@ -1242,5 +1242,21 @@
         => https://www.w3schools.com/jsref/prop_element_scrollwidth.asp
         => https://stackoverflow.com/questions/64216895/javascript-is-it-possible-to-determine-how-much-user-scrolls-after-reaching-the    (calculate scrolled height of body)
         => 
-
+09/02/2023 (Thursday):
+    => Practiced Sorting
+    => Merge Sort : 
+        => Merge Sort is a Divide and Conquer algorithm
+        => It divides input array in two halves, calls itself for the two halves and then merges the two sorted halves.
+        => The major portion of the algorithm is given two sorted arrays, and we have to merge them into a single sorted array. 
+        => Complexity :
+            => The biggest advantage of using Merge sort is that the time complexity is only n*log(n) to sort an entire Array. It is a lot better than n^2 running time of bubble sort or insertion sort.
+            => Space Complexity: O(n)
+    => Working Files : 
+        => Javascript/index.js
+        => Project/index.js
+        => README.md
+    => References:
+        => https://www.freecodecamp.org/news/sorting-algorithms-explained-with-examples-in-python-java-and-c/
+        => https://www.youtube.com/watch?v=TzeBrDU-JaY
+        
 </pre>
