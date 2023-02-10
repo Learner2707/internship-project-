@@ -1277,7 +1277,7 @@
         => Project/
         => README.md
     =>  References: 
-        => <a>https://javascript.info/array-methods</a> 
+        => https://javascript.info/array-methods
         => https://www.w3schools.com/js/js_operators.asp
         => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
         => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
