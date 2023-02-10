@@ -237,22 +237,163 @@
 {
   //   ============================================== Sorting  ==========================================================
   {
-    //  Merge Sort
-    function mergeSort (arr) {
+    // Merge Sort
+    function mergeSort(arr) {
       if (arr.length < 2) return arr;
-      let mid = Math.floor(arr.length /2);
-      let subLeft = mergeSort(arr.slice(0,mid));
-      let subRight = mergeSort(arr.slice(mid));
-      return merge(subLeft, subRight);
+      let mid = Math.floor(arr.length / 2);
+      return mergeArrays(
+        mergeSort(arr.slice(0, mid)),
+        mergeSort(arr.slice(mid))
+      );
+      function mergeArrays(a, b) {
+        let temp = [];
+        while (a.length > 0 && b.length > 0) {
+          temp.push(a[0] < b[0] ? a.shift() : b.shift());
+        }
+        return temp.concat(a.length ? a : b);
+      }
     }
-    function merge (a,b) {
-      let result = [];
-      while (a.length >0 && b.length >0)
-          result.push(a[0] < b[0]? a.shift() : b.shift());
-      return result.concat(a.length? a : b);
-  }
-  let test = [5,6,7,3,1,3,15];
-console.log(mergeSort(test));
+
+    let test = [5, 6, 7, 3, 1, 3, 15];
+    console.log(mergeSort(test));
   }
 
+  //Check palindrome
+  function palindrome(str) {
+    // let arr=[...str];
+    // let temp_arr=[...arr];
+    // let reverse_arr= arr.reverse();
+    // return temp_arr===reverse_arr?true:false;
+    // return temp_arr.length===reverse_arr.length &&
+    // temp_arr.every((value,index)=>value===reverse_arr[index]);
+
+    return str.split("").reverse().join("") === str;
+  }
+  console.log(palindrome("abaabaaba"));
+}
+//10/02/2023 (Friday)
+{
+  //Array Methods Practice
+  {
+    // Problem 1:
+    // Write the function camelize(str) that changes dash-separated words like “my-short-string” into camel-cased “myShortString”.
+    // Solution :
+    function camelize(str) {
+      return str
+        .split("-")
+        .map((word, index) =>
+          index == 0 ? word : word[0].toUpperCase() + word.slice(1)
+        )
+        .join("");
+    }
+  }
+  {
+    // Problem 2:
+    //     Write a function filterRange(arr, a, b) that gets an array arr,
+    //     looks for elements with values higher or equal to a and lower or equal to b and return a result as an array.
+    //     The function should not modify the array. It should return the new array.
+    // Solution :
+    function filterRange(arr, a, b) {
+      return arr.filter((item) => a <= item && item <= b);
+    }
+    let arr = [5, 3, 8, 1];
+    let filtered = filterRange(arr, 1, 4);
+    console.log(filtered);
+    console.log(arr);
+  }
+  {
+    // Problem 3:
+    //     Write a function filterRangeInPlace(arr, a, b) that gets an array arr and
+    //     removes from it all values except those that are between a and b. The test is: a ≤ arr[i] ≤ b.
+    // The function should only modify the array. It should not return anything.
+
+    // Solution :
+    function filterRangeInPlace(arr, a, b) {
+      for (let i = 0; i < arr.length; i++) {
+        let val = arr[i];
+        if (val < a || val > b) {
+          arr.splice(i, 1);
+          i--;
+        }
+      }
+    }
+
+    let arr = [5, 3, 8, 1];
+    filterRangeInPlace(arr, 1, 4);
+    console.log(arr);
+  }
+  {
+    // Problem 4:
+    // We have an array of strings arr. We’d like to have a sorted copy of it, but keep arr unmodified.
+    // Create a function copySorted(arr) that returns such a copy.
+
+    // Solution :
+    function copySorted(arr) {
+      return arr.slice().sort();
+    }
+
+    let arr = ["HTML", "JavaScript", "CSS"];
+    let sorted = copySorted(arr);
+
+    console.log(sorted);
+    console.log(arr);
+  }
+  {
+    // Problem 5: Create An extendable calculator
+    // Create a constructor function Calculator that creates “extendable” calculator objects.
+    // First, implement the method calculate(str) that takes a string like "1 + 2" in the format
+    // “NUMBER operator NUMBER” (space-delimited) and returns the result. Should understand plus + and minus -.
+
+    // Then add the method addMethod(name, func) that teaches the calculator a new operation.
+    // It takes the operator name and the two-argument function func(a,b) that implements it.
+
+    //     No parentheses or complex expressions in this task.
+    // The numbers and the operator are delimited with exactly one space.
+
+    // Solution :
+    function Calculator() {
+      this.methods = {
+        "-": (a, b) => a - b,
+        "+": (a, b) => a + b,
+      };
+
+      this.calculate = function (str) {
+        let calculationData = str.split(" ");
+        let a = +calculationData[0];
+        let op = calculationData[1];
+        let b = +calculationData[2];
+
+        if (!this.methods[op] || isNaN(a) || isNaN(b)) {
+          return NaN;
+        }
+
+        return this.methods[op](a, b);
+      };
+
+      this.addMethod = function (name, func) {
+        this.methods[name] = func;
+      };
+    }
+    let simpleCalculator = new Calculator();
+    console.log(simpleCalculator.calculate("20 + 23"));
+    let myCalculator = new Calculator();
+    myCalculator.addMethod("*", (a, b) => a * b);
+    myCalculator.addMethod("^", (a, b) => a ** b);
+    myCalculator.addMethod("/", (a, b) => a / b);
+    myCalculator.addMethod("%", (a, b) => a % b);
+    console.log(myCalculator.calculate("6 % 4"));
+  }
+  {
+    // Problem 6:  check Subset array of an array
+    // Check if one array is a subset of another array
+    // sample input: isSubset(arr1,arr2)
+    // sample output: true if arr2 is subset of arr1
+    
+    // Solution:
+    const isSubset = (array1, array2) =>
+      array2.every((element) => array1.includes(element));
+
+    console.log(isSubset([1, 2, 3, 4, 5, 6, 7], [5, 7, 6])); // true
+    console.log(isSubset([1, 2, 3, 4, 5, 6, 7], [5, 8, 7])); // false
+  }
 }
