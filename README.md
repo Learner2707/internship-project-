@@ -1258,5 +1258,27 @@
     => References:
         => https://www.freecodecamp.org/news/sorting-algorithms-explained-with-examples-in-python-java-and-c/
         => https://www.youtube.com/watch?v=TzeBrDU-JaY
-        
+
+10/02/2023 (Friday) :  
+    => Practiced Array methods
+    => arr.some()
+        => Syntax: arr.some(function(element,index,array){ /* … */ }, thisArg);
+        =>The some() method is an iterative method. It calls a provided callbackFn function once for each element in an array, until the callbackFn returns a truthy value.
+        => If such an element is found, some() immediately returns true and stops iterating through the array.
+        =>  Otherwise, if callbackFn returns a falsy value for all elements, some() returns false.
+        => callbackFn is invoked only for array indexes which have assigned values. It is not invoked for empty slots in sparse arrays.
+    => arr.every()
+        => Syntax: arr.every(function(element,index,array){ /* … */ }, thisArg);
+        => The every() method is an iterative method. It calls a provided callbackFn function once for each element in an array, until the callbackFn returns a falsy value. 
+        => If such an element is found, every() immediately returns false and stops iterating through the array. 
+        => Otherwise, if callbackFn returns a truthy value for all elements, every() returns true.
+    => Working Files :
+        => Javascript/index.js
+        => Project/
+        => README.md
+    =>  References: 
+        => https://javascript.info/array-methods
+        => https://www.w3schools.com/js/js_operators.asp
+        => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
+        => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
 </pre>
