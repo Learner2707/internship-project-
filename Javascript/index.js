@@ -388,12 +388,166 @@
     // Check if one array is a subset of another array
     // sample input: isSubset(arr1,arr2)
     // sample output: true if arr2 is subset of arr1
-    
+
     // Solution:
     const isSubset = (array1, array2) =>
       array2.every((element) => array1.includes(element));
 
     console.log(isSubset([1, 2, 3, 4, 5, 6, 7], [5, 7, 6])); // true
     console.log(isSubset([1, 2, 3, 4, 5, 6, 7], [5, 8, 7])); // false
+  }
+}
+// 13/02/2023(Monday)
+{
+  {
+    //Problem 6 : Map to names
+    // You have an array of user objects, each one has user.name. Write the code that converts it into an array of names.
+
+    // Solution:
+
+    let vittu = { name: "Vittu", age: 25 };
+    let reetool = { name: "Reetool", age: 22 };
+    let mehul = { name: "Mehul", age: 24 };
+
+    let users = [vittu, reetool, mehul];
+
+    let names = users.map((item) => item.name);
+
+    console.log(names);
+  }
+  {
+    //Problem 7: Map to objects
+    //     You have an array of user objects, each one has name, surname and id.
+    //     Write the code to create another array from it, of objects with id and fullName,
+    //     where fullName is generated from name and surname.
+
+    // Solution:
+    let vittu = { name: "Vittu", surname: "Singh", id: 1 };
+    let reetool = { name: "Reetool", surname: "Gupta", id: 2 };
+    let mehul = { name: "Mehul", surname: "Bajaj", id: 3 };
+
+    let users = [vittu, reetool, mehul];
+
+    let usersMapped = users.map((user) => ({
+      fullName: `${user.name} ${user.surname}`,
+      id: user.id,
+    }));
+
+    console.log(usersMapped[0].id); // 1
+    console.log(usersMapped[0].fullName); // Vittu Singh
+  }
+  {
+    // Problem 8:
+    // Write the function getAverageAge(users) that gets an array of objects with property age and returns the average age.
+    // The formula for the average is (age1 + age2 + ... + ageN) / N.
+
+    //Solution :
+    let vittu = { name: "Vittu", age: 25 };
+    let reetool = { name: "Reetool", age: 30 };
+    let mehul = { name: "Mehul", age: 29 };
+
+    let arr = [vittu, reetool, mehul];
+    function getAverageAge(users) {
+      return users.reduce((prev, curr) => prev + curr.age, 0) / users.length;
+    }
+    console.log(getAverageAge(arr));
+  }
+  {
+    // Problem 9:
+    // Let arr be an array.
+    // Create a function unique(arr) that should return an array with unique items of arr.
+    // Solution :
+    function unique(arr) {
+      return arr.filter((element, index) => arr.indexOf(element) === index);
+    }
+    console.log(unique([1, 2, 2, 3, 3, 3, 3, 1, 4]));
+  }
+  {
+    // Problem 10 :
+    // Write the function sortByAge(users) that gets an array of objects with the age property and sorts them by age.
+    // Solution :
+    let vittu = { name: "Vittu", age: 25 };
+    let reetool = { name: "Reetool", age: 22 };
+    let mehul = { name: "Mehul", age: 24 };
+
+    let users = [vittu, reetool, mehul];
+    function sortByAge(arr) {
+      return arr.sort((a, b) => a.age - b.age);
+    }
+    console.log(sortByAge(users));
+  }
+  {
+    // Problem 11:
+    // Write the function shuffle(array) that shuffles (randomly reorders) elements of the array.
+    // Multiple runs of shuffle may lead to different orders of elements.
+    // All element orders should have an equal probability
+
+    // Solution :
+    // function shuffle(array) {
+    //   array.sort(() => Math.random() - 0.6);     // normal method
+    // }
+    function shuffle(array) {
+      //Fisher-Yate's Shuffle method
+      for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    // counts of appearances for all possible permutations
+    let count = {
+      123: 0,
+      132: 0,
+      213: 0,
+      231: 0,
+      321: 0,
+      312: 0,
+    };
+
+    for (let i = 0; i < 1000000; i++) {
+      let array = [1, 2, 3];
+      shuffle(array);
+      count[array.join("")]++;
+    }
+
+    // show counts of all possible permutations
+    for (let key in count) {
+      console.log(`${key}: ${count[key]}`);
+    }
+  }
+  {
+    // Problem 12:
+    // Let’s say we received an array of users in the form {id:..., name:..., age:... }.
+    // Create a function groupById(arr) that creates an object from it, with id as the key, and array items as values.
+    let users = [
+      { id: "john", name: "John Smith", age: 20 },
+      { id: "ann", name: "Ann Smith", age: 24 },
+      { id: "pete", name: "Pete Peterson", age: 31 },
+    ];
+    let usersById = groupById(users);
+    console.log(usersById);
+    /*
+    // after the call we should have:
+    
+    usersById = {
+      john: {id: 'john', name: "John Smith", age: 20},
+      ann: {id: 'ann', name: "Ann Smith", age: 24},
+      pete: {id: 'pete', name: "Pete Peterson", age: 31},
+    }
+    */
+
+    // Solution:
+    function groupById(users) {
+      // let temp={};
+      // users.forEach(element => {
+      //   temp[element["id"]]=element;
+      // });
+      // return temp;
+
+      return users.reduce((obj, currValue) => {
+        obj[currValue["id"]] = currValue;
+        return obj;
+      }, {});
+    }
   }
 }
