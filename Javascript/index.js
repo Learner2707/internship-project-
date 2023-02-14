@@ -524,8 +524,8 @@
       { id: "ann", name: "Ann Smith", age: 24 },
       { id: "pete", name: "Pete Peterson", age: 31 },
     ];
-    let usersById = groupById(users);
-    console.log(usersById);
+    // let usersById = groupById(users);
+    console.log(groupById(users));
     /*
     // after the call we should have:
     
@@ -551,3 +551,4 @@
     }
   }
 }
+
