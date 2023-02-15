@@ -1282,11 +1282,11 @@
         => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
         => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
 
-13/02/2023 (Monday) : 
-    => Practiced Array Methods
+15/02/2023 (Wednesday) : 
+    => Practiced Javascript problems
     => Working Files :
         => Javascript/
         => README.md
     =>  References: 
-        => https://javascript.info/array-methods 
+        => https://www.hackerrank.com/dashboard
 </pre>
