@@ -551,4 +551,101 @@
     }
   }
 }
+//15/02/2023(Wednesday)
+{
+  {
+    // Problem 13:
+    //   In this challenge, you are required to calculate and print the sum of the elements in an array,
+    //  keeping in mind that some of those integers may be quite large.
+    // Function Description:
+    // Complete the aVeryBigSum function in the editor below. It must return the sum of all array elements.
+    // aVeryBigSum has the following parameter(s):
+    // int ar[n]: an array of integers .
+    // Return:
+    // long: the sum of all array elements
 
+    // Solution :
+    function aVeryBigSum(ar) {
+      return ar.reduce((prev, curr) => prev + curr, 0);
+    }
+  }
+  {
+    // Problem 14:
+
+    // Solution:
+    function diagonalDifference(arr) {
+      let leftToRight = 0,
+        rightToLeft = 0;
+      for (let i = 0; i < arr.length; i++) {
+        leftToRight += arr[i][i];
+        rightToLeft += arr[i][arr.length - i - 1];
+      }
+      return Math.abs(leftToRight - rightToLeft);
+    }
+    console.log(
+      diagonalDifference([
+        [11, 2, 4],
+        [4, 5, 6],
+        [10, 8, -12],
+      ])
+    );
+  }
+  {
+    // Problem 15:
+    // Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero.
+    // Print the decimal value of each fraction on a new line with  places after the decimal.
+
+    // Solution:
+    function plusMinus(arr) {
+      let pos = 0,
+        neg = 0,
+        zero = 0;
+      arr.forEach((el) => {
+        if (el > 0) pos += 1;
+        else if (el < 0) neg += 1;
+        else zero += 1;
+      });
+      console.log((pos / arr.length).toFixed(6));
+      console.log((neg / arr.length).toFixed(6));
+      console.log((zero / arr.length).toFixed(6));
+    }
+    plusMinus([1, 1, 0, -1, 7, -1]);
+  }
+  {
+    // Problem 16:
+    // Print a staircase of size n
+    //     #
+    //    ##
+    //   ###
+    //  ####
+    // #####
+
+    // Solution:
+
+    function staircase(n) {
+      for (let i = 0; i < n; i++) {
+        console.log(" ".repeat(n - i - 1) + "#".repeat(i + 1));
+      }
+    }
+    staircase(5);
+  }
+  {
+    // Problem 17:
+    // Given five positive integers, find the minimum and maximum values that can be calculated
+    // by summing exactly four of the five integers. Then print the respective minimum and maximum values
+    // as a single line of two space-separated long integers.
+    // Solution:
+    function miniMaxSum(arr) {
+      const sortedArr = arr.sort((a, b) => a - b);
+      console.log(
+        sortedArr.slice(0, 4).reduce((prev, curr) => prev + curr) +
+          " " +
+          sortedArr.slice(1, 5).reduce((prev, curr) => prev + curr)
+      );
+    }
+  }
+  {
+    // Problem 18: 
+    
+  }
+}
