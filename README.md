@@ -1289,4 +1289,11 @@
         => README.md
     =>  References: 
         => https://www.hackerrank.com/dashboard
+16/02/2023 (Thursday) : 
+    => Practiced Javascript problems
+    => Working Files :
+        => Javascript/
+        => README.md
+    =>  References: 
+        => https://www.hackerrank.com/dashboard
 </pre>
