@@ -696,21 +696,20 @@
     //     Given a time in 12-hour AM/PM format, convert it to military (24-hour) time.
     // Note: - 12:00:00AM on a 12-hour clock is 00:00:00 on a 24-hour clock.
     // - 12:00:00PM on a 12-hour clock is 12:00:00 on a 24-hour clock.
-    // Solution: 
+    // Solution:
     function timeConversion(s) {
-      let hours=+s.slice(0,2);
-      let minutes=+s.slice(3,5);
-      let format=s.slice(8,10);
-      if(format=="AM"){
-          if(s==="12:00:00AM") return "00:00:00";
-          else if(hours===12) return `00${s.slice(2,8)}`;
-          else return s.slice(0,8);
+      let hours = +s.slice(0, 2);
+      let minutes = +s.slice(3, 5);
+      let format = s.slice(8, 10);
+      if (format == "AM") {
+        if (s === "12:00:00AM") return "00:00:00";
+        else if (hours === 12) return `00${s.slice(2, 8)}`;
+        else return s.slice(0, 8);
+      } else {
+        if (s === "12:00:00PM") return "12:00:00";
+        else if (hours === 12) return s.slice(0, 8);
+        else return `${hours + 12}${s.slice(2, 8)}`;
       }
-      else {
-          if(s==="12:00:00PM") return "12:00:00";
-          else if(hours===12) return s.slice(0,8);
-          else return `${hours+12}${s.slice(2,8)}`;
-      }
-  }
+    }
   }
 }
