@@ -151,7 +151,7 @@
 
 //31/01/2023 (Tuesday)
 {
-  //  =============================================  Destructuring, rest operator, spread operator  =============================================================
+  //  ==========================================  Destructuring, rest operator, spread operator  ================================
   {
     // ==========================================  Object Destructuring  =========================================
     {
@@ -570,7 +570,8 @@
     }
   }
   {
-    // Problem 14:
+    // Problem 14:diagonalDifference
+    // Given a square matrix, calculate the absolute difference between the sums of its diagonals.
 
     // Solution:
     function diagonalDifference(arr) {
@@ -591,7 +592,7 @@
     );
   }
   {
-    // Problem 15:
+    // Problem 15:plusMinus
     // Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero.
     // Print the decimal value of each fraction on a new line with  places after the decimal.
 
@@ -612,7 +613,7 @@
     plusMinus([1, 1, 0, -1, 7, -1]);
   }
   {
-    // Problem 16:
+    // Problem 16:staircase
     // Print a staircase of size n
     //     #
     //    ##
@@ -630,7 +631,7 @@
     staircase(5);
   }
   {
-    // Problem 17:
+    // Problem 17:miniMaxSum
     // Given five positive integers, find the minimum and maximum values that can be calculated
     // by summing exactly four of the five integers. Then print the respective minimum and maximum values
     // as a single line of two space-separated long integers.
@@ -644,8 +645,72 @@
       );
     }
   }
+}
+// 16/02/2023(Thursday)
+{
   {
-    // Problem 18: 
-    
+    // Problem 18: Birthday Cake Candles
+    //     You are in charge of the cake for a child's birthday. You have decided the cake will have one candle
+    // for each year of their total age. They will only be able to blow out the tallest of the candles.
+    //  Count how many candles are tallest.
+
+    // Example:
+    // candles=[4,4,1,3];
+
+    // The maximum height candles are 4 units high. There are 2 of them, so return 2.
+
+    // Solution:
+    function birthdayCakeCandles(candles) {
+      let count = 0;
+      let max = Math.max(...candles);
+
+      for (let i = 0; i < candles.length; i++) {
+        if (candles[i] == max) count++;
+      }
+      return count;
+    }
+    console.log(birthdayCakeCandles([4, 4, 1, 3]));
+  }
+  {
+    // Problem 19:
+    // Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from 1 to 100 for three categories: problem clarity, originality, and difficulty.
+    // The rating for Alice's challenge is the triplet a = (a[0], a[1], a[2]), and the rating for Bob's challenge is the triplet b = (b[0], b[1], b[2]).
+
+    // The task is to find their comparison points by comparing a[0] with b[0], a[1] with b[1], and a[2] with b[2].
+
+    // If a[i] > b[i], then Alice is awarded 1 point.
+    // If a[i] < b[i], then Bob is awarded 1 point.
+    // If a[i] = b[i], then neither person receives a point.
+    // Solution:
+    function compareTriplets(a, b) {
+      let rating = [0, 0];
+      for (let i = 0; i < a.length; i++) {
+        if (a[i] > b[i]) rating[0]++;
+        if (a[i] < b[i]) rating[1]++;
+      }
+      return rating;
+    }
+  }
+  {
+    // Problem 20:
+    //     Given a time in 12-hour AM/PM format, convert it to military (24-hour) time.
+    // Note: - 12:00:00AM on a 12-hour clock is 00:00:00 on a 24-hour clock.
+    // - 12:00:00PM on a 12-hour clock is 12:00:00 on a 24-hour clock.
+    // Solution: 
+    function timeConversion(s) {
+      let hours=+s.slice(0,2);
+      let minutes=+s.slice(3,5);
+      let format=s.slice(8,10);
+      if(format=="AM"){
+          if(s==="12:00:00AM") return "00:00:00";
+          else if(hours===12) return `00${s.slice(2,8)}`;
+          else return s.slice(0,8);
+      }
+      else {
+          if(s==="12:00:00PM") return "12:00:00";
+          else if(hours===12) return s.slice(0,8);
+          else return `${hours+12}${s.slice(2,8)}`;
+      }
+  }
   }
 }
