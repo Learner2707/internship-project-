@@ -1296,4 +1296,39 @@
         => README.md
     =>  References: 
         => https://www.hackerrank.com/dashboard
+17/02/2023 (Friday) : 
+    => Studied Fetch API
+    => HTTP
+        => Every request is completely INDEPENDENT
+    => CRUD (Create, Read, Update, Delete)
+        => Create : POST
+        => Read: GET
+        => Update: PUT
+        => Delete : DELETE
+    => Fetch API
+        => Syntax: fetch("url",{options object}).then(res=>res.json()).then(res=>res);
+        => Fetching data from servers is a two stage process, 
+            => 1. an object of response class containing "status", "ok", etc properties 
+                => status: the HTTP status code eg 200
+                => ok: boolean, true if status code is 200-299
+            => 2. After that we need to call another method to access the response body in different formats 
+                => response.text() : read and return the text
+                => reponse.json() " parse the response as JSON
+                => NOTE : we can use only one body reading method eg. if we already got the response with response.text() then response.json() wont work .
+        => Response headers : available in Response.headers while first stage of GET process
+        => Request headers : To set a request header in fetch , we can use the headers option   
+            => let res= fetch(url,{
+                headers:{
+                    Authentication: "Secret"
+                }
+            });
+    => Working Files :
+        => Javascript/
+        => README.md
+    =>  References: 
+        => https://www.youtube.com/watch?v=iYM2zFP3Zn0   (HTTP info)
+        => https://www.youtube.com/watch?v=Atq7VjVbaA8&list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR&index=66
+        => https://www.youtube.com/watch?v=guYMSP7JVTA
+        => https://www.youtube.com/watch?v=hrp_RebjZE4
+
 </pre>
