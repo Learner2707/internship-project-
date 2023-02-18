@@ -7,30 +7,30 @@
     return val1 + val2;
   }
   let sum_result = add(10, 24);
-  console.log(sum_result);
+  // console.log(sum_result);
 
   // ======================================================  function expression  ======================================
   const add_function_exp = function (val1, val2) {
     return val1 + val2;
   };
   let sum_result_function_exp = add_function_exp(10, 24);
-  console.log(sum_result_function_exp);
+  // console.log(sum_result_function_exp);
 
   // ======================================================= arrow functions  ===========================================
   const add_arrow_func = (val1, val2) => {
     return val1 + val2;
   };
   let sum_result_arrow = add_arrow_func(10, 24);
-  console.log(sum_result_arrow);
+  // console.log(sum_result_arrow);
 
   // shortcut for arrow function if it has only one statement  :
   // const add_arrow_func = (val1, val2) => val1 + val2;
 
   //  =======================================   IIFE  ============================
   (function add_iife(a, b) {
-    console.log("I am an Immediately Invoked Function Expression");
+    // console.log("I am an Immediately Invoked Function Expression");
     let result = a + b;
-    console.log(result);
+    // console.log(result);
   })(5, 6);
 }
 //25/01/2023(Wednesday)
@@ -44,7 +44,7 @@
         return this.firstName + " " + this.lastName;
       },
     };
-    console.log(person.fullName());
+    // console.log(person.fullName());
   }
   // ================================  call, apply, bind  ====================================
   {
@@ -73,10 +73,10 @@
         firstName: "Reetool",
         lastName: "Gupta",
       };
-      console.log(person.fullName.call(person1));
-      console.log(person.fullName.call(person2));
-      console.log(person.description.call(person1, "Frontend")); // call()  with arguments
-      console.log(person.description.call(person2, "Backend"));
+      // console.log(person.fullName.call(person1));
+      // console.log(person.fullName.call(person2));
+      // console.log(person.description.call(person1, "Frontend")); // call()  with arguments
+      // console.log(person.description.call(person2, "Backend"));
     }
     //   ================================================ apply() method  =======================================
     {
@@ -104,8 +104,8 @@
         firstName: "Reetool",
         lastName: "Gupta",
       };
-      console.log(person.description.apply(person1, ["Frontend", "Delhi"])); // apply()  with arguments
-      console.log(person.description.apply(person2, ["Backend", "Pune"]));
+      // console.log(person.description.apply(person1, ["Frontend", "Delhi"])); // apply()  with arguments
+      // console.log(person.description.apply(person2, ["Backend", "Pune"]));
     }
     //  ===================================== bind()  method   ===================================
     {
@@ -122,7 +122,7 @@
         lastName: "Gupta",
       };
 
-      console.log(person.fullName.bind(member)());
+      // console.log(person.fullName.bind(member)());
     }
   }
 }
@@ -130,7 +130,7 @@
 {
   // ============================================  Hoisting  ========================================
   {
-    console.log(a_hoist); //will show undefined
+    // console.log(a_hoist); //will show undefined
     var a_hoist = 5;
     //console.log(b);   // will result in ReferenceError
     let b = 5;
@@ -138,13 +138,13 @@
     const c = 5;
     hoisted();
     function hoisted() {
-      console.log("Function is hoisted if it is declared this way. ");
+      // console.log("Function is hoisted if it is declared this way. ");
     }
     //hoisting_func_exp();  // this results error saying that it is not a function
     var hoisting_func_exp = function () {
-      console.log(
-        "Function does not get hoisted if declared using function expression method"
-      );
+      // console.log(
+      //   "Function does not get hoisted if declared using function expression method"
+      // );
     };
   }
 }
@@ -165,28 +165,28 @@
         },
       };
       const { firstName, lastName } = person; // object destructing with variable name same as keys of object
-      console.log(firstName, lastName);
+      // console.log(firstName, lastName);
 
       const { firstName: fN, lastName: lN } = person; // object destructing with custom variable name (alias) of keys of object
-      console.log(fN, lN);
+      // console.log(fN, lN);
 
       // destructuring object passed as argument to the function
       function object_destructure({ fullName: getFullName }) {
         const personfullName = getFullName.call(arguments[0]);
-        console.log(personfullName);
+        // console.log(personfullName);
       }
       object_destructure(person);
 
       // using rest oeprator
       function test_rest_operator({ firstName, lastName, ...other_info }) {
-        console.log(firstName, lastName);
-        console.log(other_info);
+        // console.log(firstName, lastName);
+        // console.log(other_info);
       }
       test_rest_operator(person);
 
       // using spread operator
       function display(args) {
-        console.log(args);
+        // console.log(args);
       }
       display(person); //passing whole object
       display({ ...person }); //another way : using spread operator, whole object is passed here , {} should be used
@@ -203,31 +203,31 @@
 
       // Assigning new variable names and providing default values simultaneously
       const { a: num1 = 100, b: num2 = 200 } = { a: 300 };
-      console.log(num1); //300
-      console.log(num2); //200
+      // console.log(num1); //300
+      // console.log(num2); //200
     }
 
     // ==========================================  Array Destructuring  =======================================
     {
       const arr = [1, 2, 3, 4, 5];
       const [a, b, c] = arr; //destructuring the array
-      console.log(a, b, c);
+      // console.log(a, b, c);
 
       // using rest operator
       const [d, e, ...others] = arr;
-      console.log(d, e);
-      console.log(others);
+      // console.log(d, e);
+      // console.log(others);
 
       function calculate_sum([a, b, ...other_numbers]) {
-        console.log(a + b + other_numbers.reduce((prev, curr) => prev + curr));
+        // console.log(a + b + other_numbers.reduce((prev, curr) => prev + curr));
       }
       calculate_sum(arr);
 
       //using spread operator
-      console.log([...arr]);
+      // console.log([...arr]);
 
       function cal_sum_using_spread([...numbers]) {
-        console.log(numbers.reduce((prev, curr) => prev + curr));
+        // console.log(numbers.reduce((prev, curr) => prev + curr));
       }
       cal_sum_using_spread(arr);
     }
@@ -255,7 +255,7 @@
     }
 
     let test = [5, 6, 7, 3, 1, 3, 15];
-    console.log(mergeSort(test));
+    // console.log(mergeSort(test));
   }
 
   //Check palindrome
@@ -269,7 +269,7 @@
 
     return str.split("").reverse().join("") === str;
   }
-  console.log(palindrome("abaabaaba"));
+  // console.log(palindrome("abaabaaba"));
 }
 //10/02/2023 (Friday)
 {
@@ -298,8 +298,8 @@
     }
     let arr = [5, 3, 8, 1];
     let filtered = filterRange(arr, 1, 4);
-    console.log(filtered);
-    console.log(arr);
+    // console.log(filtered);
+    // console.log(arr);
   }
   {
     // Problem 3:
@@ -320,7 +320,7 @@
 
     let arr = [5, 3, 8, 1];
     filterRangeInPlace(arr, 1, 4);
-    console.log(arr);
+    // console.log(arr);
   }
   {
     // Problem 4:
@@ -335,8 +335,8 @@
     let arr = ["HTML", "JavaScript", "CSS"];
     let sorted = copySorted(arr);
 
-    console.log(sorted);
-    console.log(arr);
+    // console.log(sorted);
+    // console.log(arr);
   }
   {
     // Problem 5: Create An extendable calculator
@@ -375,13 +375,13 @@
       };
     }
     let simpleCalculator = new Calculator();
-    console.log(simpleCalculator.calculate("20 + 23"));
+    // console.log(simpleCalculator.calculate("20 + 23"));
     let myCalculator = new Calculator();
     myCalculator.addMethod("*", (a, b) => a * b);
     myCalculator.addMethod("^", (a, b) => a ** b);
     myCalculator.addMethod("/", (a, b) => a / b);
     myCalculator.addMethod("%", (a, b) => a % b);
-    console.log(myCalculator.calculate("6 % 4"));
+    // console.log(myCalculator.calculate("6 % 4"));
   }
   {
     // Problem 6:  check Subset array of an array
@@ -393,8 +393,8 @@
     const isSubset = (array1, array2) =>
       array2.every((element) => array1.includes(element));
 
-    console.log(isSubset([1, 2, 3, 4, 5, 6, 7], [5, 7, 6])); // true
-    console.log(isSubset([1, 2, 3, 4, 5, 6, 7], [5, 8, 7])); // false
+    // console.log(isSubset([1, 2, 3, 4, 5, 6, 7], [5, 7, 6])); // true
+    // console.log(isSubset([1, 2, 3, 4, 5, 6, 7], [5, 8, 7])); // false
   }
 }
 // 13/02/2023(Monday)
@@ -413,7 +413,7 @@
 
     let names = users.map((item) => item.name);
 
-    console.log(names);
+    // console.log(names);
   }
   {
     //Problem 7: Map to objects
@@ -433,8 +433,8 @@
       id: user.id,
     }));
 
-    console.log(usersMapped[0].id); // 1
-    console.log(usersMapped[0].fullName); // Vittu Singh
+    // console.log(usersMapped[0].id); // 1
+    // console.log(usersMapped[0].fullName); // Vittu Singh
   }
   {
     // Problem 8:
@@ -450,7 +450,7 @@
     function getAverageAge(users) {
       return users.reduce((prev, curr) => prev + curr.age, 0) / users.length;
     }
-    console.log(getAverageAge(arr));
+    // console.log(getAverageAge(arr));
   }
   {
     // Problem 9:
@@ -460,7 +460,7 @@
     function unique(arr) {
       return arr.filter((element, index) => arr.indexOf(element) === index);
     }
-    console.log(unique([1, 2, 2, 3, 3, 3, 3, 1, 4]));
+    // console.log(unique([1, 2, 2, 3, 3, 3, 3, 1, 4]));
   }
   {
     // Problem 10 :
@@ -474,7 +474,7 @@
     function sortByAge(arr) {
       return arr.sort((a, b) => a.age - b.age);
     }
-    console.log(sortByAge(users));
+    // console.log(sortByAge(users));
   }
   {
     // Problem 11:
@@ -512,7 +512,7 @@
 
     // show counts of all possible permutations
     for (let key in count) {
-      console.log(`${key}: ${count[key]}`);
+      // console.log(`${key}: ${count[key]}`);
     }
   }
   {
@@ -525,7 +525,7 @@
       { id: "pete", name: "Pete Peterson", age: 31 },
     ];
     // let usersById = groupById(users);
-    console.log(groupById(users));
+    // console.log(groupById(users));
     /*
     // after the call we should have:
     
@@ -583,13 +583,13 @@
       }
       return Math.abs(leftToRight - rightToLeft);
     }
-    console.log(
-      diagonalDifference([
-        [11, 2, 4],
-        [4, 5, 6],
-        [10, 8, -12],
-      ])
-    );
+    // console.log(
+    //   diagonalDifference([
+    //     [11, 2, 4],
+    //     [4, 5, 6],
+    //     [10, 8, -12],
+    //   ])
+    // );
   }
   {
     // Problem 15:plusMinus
@@ -606,9 +606,9 @@
         else if (el < 0) neg += 1;
         else zero += 1;
       });
-      console.log((pos / arr.length).toFixed(6));
-      console.log((neg / arr.length).toFixed(6));
-      console.log((zero / arr.length).toFixed(6));
+      // console.log((pos / arr.length).toFixed(6));
+      // console.log((neg / arr.length).toFixed(6));
+      // console.log((zero / arr.length).toFixed(6));
     }
     plusMinus([1, 1, 0, -1, 7, -1]);
   }
@@ -625,7 +625,7 @@
 
     function staircase(n) {
       for (let i = 0; i < n; i++) {
-        console.log(" ".repeat(n - i - 1) + "#".repeat(i + 1));
+        // console.log(" ".repeat(n - i - 1) + "#".repeat(i + 1));
       }
     }
     staircase(5);
@@ -638,11 +638,11 @@
     // Solution:
     function miniMaxSum(arr) {
       const sortedArr = arr.sort((a, b) => a - b);
-      console.log(
-        sortedArr.slice(0, 4).reduce((prev, curr) => prev + curr) +
-          " " +
-          sortedArr.slice(1, 5).reduce((prev, curr) => prev + curr)
-      );
+      // console.log(
+      //   sortedArr.slice(0, 4).reduce((prev, curr) => prev + curr) +
+      //     " " +
+      //     sortedArr.slice(1, 5).reduce((prev, curr) => prev + curr)
+      // );
     }
   }
 }
@@ -669,7 +669,7 @@
       }
       return count;
     }
-    console.log(birthdayCakeCandles([4, 4, 1, 3]));
+    // console.log(birthdayCakeCandles([4, 4, 1, 3]));
   }
   {
     // Problem 19:
@@ -711,5 +711,44 @@
         else return `${hours + 12}${s.slice(2, 8)}`;
       }
     }
+    // console.log(timeConversion("11:10:00PM"));
+  }
+}
+//17/02/2023(Friday)
+{
+  // Fetch API
+  {
+    //Get weather of India
+    // let p = fetch("https://goweather.herokuapp.com/weather/in", {
+    //   method: "GET",
+    // });
+    // p.then((response) => {
+    //   console.log("Response Status Code: ", response.status); //Response Status Code:  200
+    //   console.log("Okay ? : ", response.ok); //Okay ? :  true
+    //   if (response.ok === false) {
+    //     return (
+    //       "There seems to be some error. Error code: " + `${response.status}`
+    //     );
+    //   } else return response.json(); //we can read the response body only ONCE
+    // }).then((response) => {
+    //   console.log("Response: ", response);
+    // });
+  }
+  {
+    // Get available pets
+    (async function () {
+      let myPets = [];
+      let p1 = await fetch(
+        "https://petstore.swagger.io/v2/pet/findByStatus?status=available"
+      )
+        .then((resp) => resp.json())
+        .then((resp) => resp)
+        .catch((err) => err); //fetching without options is by default a GET request
+
+      p1.map((element) => {
+        if (element.name === "doggie") myPets.push(element);
+      });
+      console.log("myPets", myPets);
+    })();
   }
 }
