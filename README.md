@@ -1332,4 +1332,21 @@
         => https://www.youtube.com/watch?v=guYMSP7JVTA
         => https://www.youtube.com/watch?v=hrp_RebjZE4
 
+20/02/2023(Monday):
+    => POST request using FETCH API
+        => POST is used for adding new data in the api
+        => The post request is widely used to submit forms to the server. Fetch also supports the POST method call.
+        => To do a POST request we need to specify additional parameters with the request such as method, headers, etc
+        =>For a POST request, you can use the “body” property to pass a JSON string as input. 
+        => Do note that the request body should be a JSON string while the headers should be a JSON object.
+    => PUT request using FETCH API: 
+        => PUT is used for updating the pre-existing data in the api
+    => Working Files :
+        => Javascript/
+        => README.md
+    =>  References: 
+        => https://reactjs.org/docs/reconciliation.html (Reconciliation)
+        => https://www.geeksforgeeks.org/get-and-post-method-using-fetch-api/
+        => https://www.freecodecamp.org/news/javascript-fetch-api-tutorial-with-js-fetch-post-and-header-examples/
+
 </pre>
