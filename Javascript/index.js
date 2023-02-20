@@ -736,19 +736,109 @@
   }
   {
     // Get available pets
-    (async function () {
-      let myPets = [];
-      let p1 = await fetch(
-        "https://petstore.swagger.io/v2/pet/findByStatus?status=available"
-      )
-        .then((resp) => resp.json())
-        .then((resp) => resp)
-        .catch((err) => err); //fetching without options is by default a GET request
-
-      p1.map((element) => {
-        if (element.name === "doggie") myPets.push(element);
-      });
-      console.log("myPets", myPets);
-    })();
+    // (async function () {
+    //   let myPets = [];
+    //   let p1 = await fetch(
+    //     "https://petstore.swagger.io/v2/pet/findByStatus?status=available"
+    //   )
+    //     .then((resp) => resp.json())
+    //     .then((resp) => resp)
+    //     .catch((err) => err); //fetching without options is by default a GET request
+    //   p1.map((element) => {
+    //     if (element.name === "doggie") myPets.push(element);
+    //   });
+    //   console.log("myPets", myPets);
+    // })();
   }
 }
+
+// 20/02/2023(Monday):
+let postUserOptions = {
+  method: "POST",
+  headers: {
+    "Content-type": "application/json",
+  },
+  body: JSON.stringify({
+    username: "vittu",
+    firstName: "Vittu",
+    lastName: "Singh",
+    email: "vittu@test.com",
+    password: "vittu@ADMIN1",
+    phone: "1234567890",
+  }),
+};
+let postUrl = "https://petstore.swagger.io/v2/user/";
+let getUrl = "https://petstore.swagger.io/v2/user/";
+let putUrl = "https://petstore.swagger.io/v2/user/vittu";
+let putPayLoad = {
+  password: "vittu@ADMIN5",
+};
+let putOptions = {
+  method: "PUT",
+  headers: {
+    "Content-type": "application/json",
+  },
+  body: JSON.stringify(putPayLoad),
+};
+
+async function post(url, options) {
+  try {
+    let response = await fetch(url, options);
+    return await response.json();
+  } catch (e) {
+    return Promise.reject(e);
+  }
+}
+async function get(url, username, options) {
+  try {
+    let response = await fetch(url.concat(username), options);
+    return await response.json();
+  } catch (e) {
+    return Promise.reject(e);
+  }
+}
+async function put(url, options) {
+  try {
+    let response = await fetch(url, options);
+    return response.status;
+  } catch (e) {
+    return Promise.reject(e);
+  }
+}
+post(postUrl, postUserOptions)
+  .then((r) => {
+    console.log("Posted Data: ", r);
+  })
+  .catch((err) => {
+    console.log("Error: ", err);
+  });
+
+
+
+
+get(getUrl, "vittu")
+  .then((r) => {
+    console.log("User Data: ", r);
+  })
+  .catch((err) => {
+    console.log("err", err);
+  });
+
+
+
+
+put(putUrl, putOptions)
+  .then((r) => {
+    console.log("Updated ? : ", r);
+  })
+  .catch((err) => {
+    console.log("err", err);
+  });
+
+get(getUrl, "vittu")
+  .then((r) => {
+    console.log("User Data: ", r);
+  })
+  .catch((err) => {
+    console.log("err", err);
+  });
