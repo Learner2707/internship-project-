@@ -770,6 +770,7 @@ let postUserOptions = {
 let postUrl = "https://petstore.swagger.io/v2/user/";
 let getUrl = "https://petstore.swagger.io/v2/user/";
 let putUrl = "https://petstore.swagger.io/v2/user/vittu";
+let deleteUrl = "https://petstore.swagger.io/v2/user/vittu";
 let putPayLoad = {
   password: "vittu@ADMIN5",
 };
@@ -780,24 +781,46 @@ let putOptions = {
   },
   body: JSON.stringify(putPayLoad),
 };
+let deleteOptions = {
+  method: "DELETE",
+  headers: {
+    "Content-type": "application/json",
+  },
+};
 
-async function post(url, options) {
+async function checkUserExistanceForPost(url, bodyObj) {
+  let fetchRes = await fetch(url.concat(bodyObj.username));
+
+  if (fetchRes.status === 200) {
+    return Promise.reject(Error("Cannot POST ! User Already Exists."));
+  } else return true;
+}
+
+async function postRequest(url, options) {
+  let bodyObj = JSON.parse(options.body);
+  let canYouPost = await checkUserExistanceForPost(url, bodyObj);
+  if (canYouPost === true) {
+    try {
+      let response = await fetch(url, options);
+      return await response.json();
+    } catch (e) {
+      return Promise.reject(e);
+    }
+  } else return Promise.reject();
+}
+
+async function getRequest(url, username) {
   try {
-    let response = await fetch(url, options);
-    return await response.json();
+    let response = await fetch(url.concat(username));
+    return response.status !== 200
+      ? Promise.reject(Error("User Not Found"))
+      : await response.json();
   } catch (e) {
     return Promise.reject(e);
   }
 }
-async function get(url, username, options) {
-  try {
-    let response = await fetch(url.concat(username), options);
-    return await response.json();
-  } catch (e) {
-    return Promise.reject(e);
-  }
-}
-async function put(url, options) {
+
+async function putRequest(url, options) {
   try {
     let response = await fetch(url, options);
     return response.status;
@@ -805,40 +828,49 @@ async function put(url, options) {
     return Promise.reject(e);
   }
 }
-post(postUrl, postUserOptions)
-  .then((r) => {
-    console.log("Posted Data: ", r);
-  })
-  .catch((err) => {
-    console.log("Error: ", err);
-  });
+async function deleteRequest(url, options) {
+  try {
+    let response = await fetch(url, options);
+    return response.status;
+  } catch (e) {
+    return Promise.reject(e);
+  }
+}
+// (async () => {
+//     let r = await postRequest(postUrl, postUserOptions);
+//     console.log("Posted Data: ", r);
+//   })();
 
+// postRequest(postUrl, postUserOptions)
+//   .then((r) => {
+//     console.log("Posted Data: ", r);
+//   });
 
-
-
-get(getUrl, "vittu")
-  .then((r) => {
-    console.log("User Data: ", r);
-  })
-  .catch((err) => {
-    console.log("err", err);
-  });
-
-
-
-
-put(putUrl, putOptions)
-  .then((r) => {
-    console.log("Updated ? : ", r);
-  })
-  .catch((err) => {
-    console.log("err", err);
-  });
-
-get(getUrl, "vittu")
+getRequest(getUrl, "vittu")
   .then((r) => {
     console.log("User Data: ", r);
   })
   .catch((err) => {
-    console.log("err", err);
+    console.log("Error", err);
   });
+
+// putRequest(putUrl, putOptions)
+//   .then((r) => {
+//     console.log("Updated ? : ", r);
+//   })
+//   .catch((err) => {
+//     console.log("err", err);
+//   });
+
+// deleteRequest(putUrl, deleteOptions)
+//   .then((r) => {
+//     console.log("Deleted ? : ", r);
+//   })
+//   .catch((err) => {
+//     console.log("err", err);
+//   });
+
+// checkUserExistanceForPost(postUrl,JSON.parse(postUserOptions.body))
+// .then((r)=>{
+//   console.log("ans",r);
+// });
