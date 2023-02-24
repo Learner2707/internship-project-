@@ -790,7 +790,7 @@ let deleteOptions = {
 
 async function checkUserExistanceForPost(url, bodyObj) {
   let fetchRes = await fetch(url.concat(bodyObj.username));
-
+  
   if (fetchRes.status === 200) {
     return Promise.reject(Error("Cannot POST ! User Already Exists."));
   } else return true;
@@ -841,18 +841,18 @@ async function deleteRequest(url, options) {
 //     console.log("Posted Data: ", r);
 //   })();
 
-// postRequest(postUrl, postUserOptions)
-//   .then((r) => {
-//     console.log("Posted Data: ", r);
-//   });
-
-getRequest(getUrl, "vittu")
+postRequest(postUrl, postUserOptions)
   .then((r) => {
-    console.log("User Data: ", r);
-  })
-  .catch((err) => {
-    console.log("Error", err);
+    console.log("Posted Data: ", r);
   });
+
+// getRequest(getUrl, "vittu")
+//   .then((r) => {
+//     console.log("User Data: ", r);
+//   })
+//   .catch((err) => {
+//     console.log("Error", err);
+//   });
 
 // putRequest(putUrl, putOptions)
 //   .then((r) => {
