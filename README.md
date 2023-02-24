@@ -1345,8 +1345,103 @@
         => Javascript/
         => README.md
     =>  References: 
-        => https://reactjs.org/docs/reconciliation.html (Reconciliation)
         => https://www.geeksforgeeks.org/get-and-post-method-using-fetch-api/
         => https://www.freecodecamp.org/news/javascript-fetch-api-tutorial-with-js-fetch-post-and-header-examples/
 
+<hr/>                                           <b>React</b> <hr/>
+
+21/02/2023(Tuesday):
+    =>DELETE request using Fetch API: 
+        => DELETE is used for deleting existing data in the api
+        => Synatx : fetch("url",{options object}).then(res=>res);
+            => here in options object we provide the value of key "Method" as "DELETE";
+    => React : SPA
+        => SPA(Single Page Application): A Single Page Application is a web application or website that interacts with the web browser by dynamically rewriting the current web page with new data from the web server, instead of the default method of the browser loading entire new pages.
+        => A single-page application is an application that loads a single HTML page and all the necessary assets (such as JavaScript and CSS) required for the application to run. Any interactions with the page or subsequent pages do not require a round trip to the server which means the page is not reloaded.
+    => Studied File Structure of a React App
+    => React Components:  
+        => A Component is one of the core building blocks of React.Components make the task of building UIs much easier
+        => There are two types of components:
+        => Functional Components : Functional components are simply javascript functions
+            => We can create a functional component in React by writing a javascript function.
+            => These functions may or may not receive data as parameters
+            => Example : const Democomponent=()=>
+                        {
+                            return <h1>Welcome Message!</h1>;
+                        }
+        => Class Components: The class components are a little more complex than the functional components
+            =>  The functional components are not aware of the other components in your program whereas the class components can work with each other.
+            =>We can pass data from one class component to other class components
+            => We can use JavaScript ES6 classes to create class-based components in React
+            => SYntax : class Democomponent extends React.Component
+                {
+                   render(){
+                        return <h1>Welcome Message!</h1>;
+                    }
+                }
+    => Reconciliation : 
+        => The reconciliation process makes React work faster.
+        =>  Reconciliation is the process through which React updates the Browser DOM.
+        => Important concepts behind the working of the Reconciliation process are:
+                => Virtual DOM                 
+                => Diffing Algorithm
+        => The term rendering in React can closely be identified as making or becoming.
+        => In traditional rendering, Browser does the following tasks:
+                => Creates a DOM (Document Object Model) represented by a tree structure.
+                => Renders any new data to the DOM even if data is similar to previous ones.
+        => This rendering by Browser has a sequence of steps and is rather costly in nature. The concept of Virtual DOM used by React makes rendering much faster.
+    => Working Files:
+        => Javascript/
+        => README.md
+    => References:
+        => https://jasonwatmore.com/post/2021/09/21/fetch-http-delete-request-examples
+        => https://www.bloomreach.com/en/blog/2018/what-is-a-single-page-application?spz=article_var
+        => https://www.geeksforgeeks.org/reactjs-components/?ref=lbp
+        => https://reactjs.org/docs/reconciliation.html (Reconciliation)
+        => https://www.geeksforgeeks.org/reactjs-reconciliation/
+
+22/02/2023(Wednesday):
+    => Worked on Training Plan for HTML, CSS
+    => Virtual DOM : 
+        => React renders JSX components to the Browser DOM, but keeps a copy of the actual DOM to itself. This copy is the Virtual DOM
+        => We can think of it as the twin brother of the real or Browser DOM
+        => The following actions take place in React:
+            => React stores a copy of Browser DOM which is called Virtual DOM.
+            => When we make changes or add data, React creates a new Virtual DOM and compares it with the previous one.
+            => Comparison is done by Diffing Algorithm. The cool fact is all these comparisons take place in the memory and nothing is yet changed in the Browser.
+            => After comparing, React goes ahead and creates a new Virtual DOM having the changes. It is to note that as many as 200,000 virtual DOM nodes can be produced in a second.
+            => Then it updates the Browser DOM with the least number of changes possible without rendering the entire DOM again. This changes the efficiency of an application tremendously
+    => How does this Virtual DOM compare itself to its previous version?
+        => This is where the Diffing Algorithm comes into play
+        => Steps: 
+            => Two elements of different types will produce different trees.
+            => Breadth-First Search (BFS) is applied because if a node is found as changed, it will re-render the entire subtree hence Depth First Approach is not exactly optimal.
+            => When comparing two elements of the same type, keep the underlying node as same and only update changes in attributes or styles.
+            => React uses optimizations so that a minimal difference can be calculated in O(N) efficiently using this Algorithm.
+    => References :
+        => https://www.geeksforgeeks.org/reactjs-reconciliation/
+
+23/02/2023(Thursday):
+    => Worked on Training Plan HTML CSS
+    => Life cycle of Component
+        => Initialization: This is the stage where the component is constructed with the given Props and default state. This is done in the constructor of a Component Class.
+        => Mounting: Mounting is the stage of rendering the JSX returned by the render method itself.
+        => Updating: Updating is the stage when the state of a component is updated and the application is repainted.
+        => Unmounting: As the name suggests Unmounting is the final step of the component lifecycle where the component is removed from the page.
+    => Raw HTML to React :
+        => You need to return a single parent element in JSX
+        => To define class names and for attributes in JSX, you don't do it as class or for, since both are reserved keywords in JavaScript.
+        => You actually create class components with the class keyword. So, to define class names in JSX, you do it as "className" and for attributes for labels you write "HTMLFor":
+        => Write all HTML Attributes in camelCase in JSX
+            => You need to write all HTML attributes and event references in camelCase while writing JSX. So, onclick becomes onClick, onmouseover becomes onMouseOver, and so on
+        => All Tags Self-close in JSX
+        => You can implement JS directly in JSX
+            => In JSX, it is possible to write JavaScript directly. You can do this by putting the JavaScript in curly braces {...}
+        => Write Inline Styles as Objects in JSX
+            => < p style = { {color: "#2ecc71", fontSize: "26px"} }> Hello< /p>
+            => The css property name should be in camelcase (eg: fontSize and not font-size)
+    => References : 
+        => https://www.geeksforgeeks.org/reactjs-lifecycle-components/?ref=lbp
+        => https://www.freecodecamp.org/news/html-vs-jsx-whats-the-difference/#:~:text=HTML%20is%20a%20very%20important,a%20syntactic%20sugar%20for%20React.
+        
 </pre>

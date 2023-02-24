@@ -870,7 +870,3 @@ getRequest(getUrl, "vittu")
 //     console.log("err", err);
 //   });
 
-// checkUserExistanceForPost(postUrl,JSON.parse(postUserOptions.body))
-// .then((r)=>{
-//   console.log("ans",r);
-// });
