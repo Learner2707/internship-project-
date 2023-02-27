@@ -1444,4 +1444,18 @@
         => https://www.geeksforgeeks.org/reactjs-lifecycle-components/?ref=lbp
         => https://www.freecodecamp.org/news/html-vs-jsx-whats-the-difference/#:~:text=HTML%20is%20a%20very%20important,a%20syntactic%20sugar%20for%20React.
         
+24/02/2023(Friday):
+    => Worked on Training Plan HTML CSS
+    => React installing via CDN Links 
+        =>  < script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></>
+            < script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></>
+            => Using these scripts , we can run react anywhere 
+    => References: 
+        => https://reactjs.org/docs/cdn-links.html 
+25/02/2023(Monday):
+    => Learning React from Namaste React 
+    => References : 
+        => https://learn.namastedev.com/
+
+
 </pre>
