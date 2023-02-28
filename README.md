@@ -1452,10 +1452,16 @@
             => Using these scripts , we can run react anywhere 
     => References: 
         => https://reactjs.org/docs/cdn-links.html 
-25/02/2023(Monday):
+27/02/2023(Monday):
     => Learning React from Namaste React 
     => References : 
         => https://learn.namastedev.com/
-
+28/02/2023(Monday):
+    => Learning React from Namaste React
+    => Working Files: 
+        => https://github.com/Learner2707/react-course/commits/master
+    => References :
+        =>https://stackoverflow.com/questions/30281944/how-to-add-style-to-react-element-if-its-created-this-way     (using style as prop)
+        => https://learn.namastedev.com/
 
 </pre>
