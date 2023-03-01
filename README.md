@@ -1456,12 +1456,25 @@
     => Learning React from Namaste React 
     => References : 
         => https://learn.namastedev.com/
-28/02/2023(Monday):
+28/02/2023(Tuesday):
     => Learning React from Namaste React
     => Working Files: 
         => https://github.com/Learner2707/react-course/commits/master
     => References :
         =>https://stackoverflow.com/questions/30281944/how-to-add-style-to-react-element-if-its-created-this-way     (using style as prop)
         => https://learn.namastedev.com/
+01/03/2023(Wednesday):
+    => Learning React from Namaste React
+    => useEffect
+        => A functional React component uses props and/or state to calculate the output. If the component makes calculations that don't target the output value, then these calculations are named side-effects.
+        => useEffect() hook accepts 2 arguments:  useEffect(callback[, dependencies]);
+            => callback is a function that contains the side-effect logic. callback is executed right after the DOM update.
+            => dependencies is an optional array of dependencies. useEffect() executes callback only if the dependencies have changed between renderings.
+    => Working Files: 
+        => https://github.com/Learner2707/react-course
+    => References :
+        =>https://parceljs.org/
+        => https://learn.namastedev.com/
+        => https://dmitripavlutin.com/react-useeffect-explanation/    (useEffect)
 
 </pre>
