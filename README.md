@@ -1477,4 +1477,23 @@
         => https://learn.namastedev.com/
         => https://dmitripavlutin.com/react-useeffect-explanation/    (useEffect)
 
+02/03/2023(Thursday):
+    => Learning React from Namaste React
+    => JSX prevents Injection attacks
+        => It is safe to embed user input in JSX:
+            =>  const title = response.potentiallyMaliciousInput;
+                // This is safe:
+                const element = <h1>{title}</h1>;
+        => By default, React DOM escapes any values embedded in JSX before rendering them.
+        => Thus it ensures that you can never inject anything that’s not explicitly written in your application.
+        =>  Everything is converted to a string before being rendered. This helps prevent XSS (cross-site-scripting) attacks.
+
+    => References: 
+        => https://reactjs.org/docs/introducing-jsx.html#:~:text=JSX%20Prevents%20Injection%20Attacks&text=By%20default%2C%20React%20DOM%20escapes,a%20string%20before%20being%20rendered.
+        => https://learn.namastedev.com/
+        => https://en.wikipedia.org/wiki/Cross-site_scripting
+
+
+
+
 </pre>
