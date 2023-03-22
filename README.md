@@ -1545,5 +1545,9 @@
     => Learning React from Namaste React
     => Working Files: 
         => https://github.com/Learner2707/react-course
+22/03/2023(Wednesday):
+    => Learning React from Namaste React
+    => Working Files: 
+        => https://github.com/Learner2707/react-course
 
 </pre>
